@@ -43,8 +43,9 @@
       <li><a href="#faq">FAQ</a></li>
     </ul>
     <div class="nav-buy">
-      <a class="btn btn-primary btn-sm" href="https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00" target="_blank" rel="noopener noreferrer">Pay with card</a>
-      <a class="btn btn-paypal btn-sm" href="https://www.paypal.com/ncp/payment/UY5FY7UCJPDYG" target="_blank" rel="noopener noreferrer">PayPal</a>
+      <a class="btn btn-primary btn-sm when-soon" href="mailto:alphamaxstudios@gmail.com?subject=Game%20Bot%20waitlist&body=Hi%2C%20please%20notify%20me%20when%20Game%20Bot%20launches.%0A%0AMy%20GPU%20(optional)%3A%20">Coming soon</a>
+      <a class="btn btn-primary btn-sm when-live" data-checkout="stripe" href="#pricing" hidden>Pay with card</a>
+      <a class="btn btn-paypal btn-sm when-live" data-checkout="paypal" href="#pricing" hidden>PayPal</a>
     </div>
   </div>
 </header>
@@ -63,8 +64,9 @@
       <h1>Your local <span class="chrome">automatic game studio</span>.</h1>
       <p class="lead">Game Bot is a local AI studio assistant that runs the game-dev pipeline for you — from pitch and design to a playable start, then assets, Blender one-of-a-kind pieces, docs, legal, QA and Steam prep. It runs on your own PC with unlimited local LLM use. No cloud usage caps.</p>
       <div class="cta">
-        <a class="btn btn-primary" href="https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00" target="_blank" rel="noopener noreferrer">Buy — pay with card</a>
-        <a class="btn btn-paypal" href="https://www.paypal.com/ncp/payment/UY5FY7UCJPDYG" target="_blank" rel="noopener noreferrer">Buy with PayPal</a>
+        <a class="btn btn-primary when-soon" href="mailto:alphamaxstudios@gmail.com?subject=Game%20Bot%20waitlist&body=Hi%2C%20please%20notify%20me%20when%20Game%20Bot%20launches.%0A%0AMy%20GPU%20(optional)%3A%20">Coming soon — get notified</a>
+        <a class="btn btn-primary when-live" data-checkout="stripe" href="#pricing" hidden>Buy — pay with card</a>
+        <a class="btn btn-paypal when-live" data-checkout="paypal" href="#pricing" hidden>Buy with PayPal</a>
         <a class="btn btn-ghost" href="#pipeline">See how it works</a>
       </div>
       <div class="pills">
@@ -156,17 +158,21 @@
   <section id="pricing">
     <div class="wrap">
       <div class="price">
-        <span class="tag">Available now</span>
+        <span class="tag when-soon">Coming soon</span>
+        <span class="tag when-live" hidden>Available now</span>
         <h2 style="margin-top:14px">Game Bot</h2>
-        <div class="amt">$99 <small>one-time</small></div>
+        <div class="amt">$99 <small><span class="when-soon">launch price · </span>one-time</small></div>
         <p class="muted">One-time purchase for one PC. After a successful payment you receive a license key and the download by email. All sales are final &mdash; no refunds on this digital good. Game Bot binds to the computer it is installed on.</p>
         <div class="cta" style="justify-content:center">
-          <a class="btn btn-primary" href="https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00" target="_blank" rel="noopener noreferrer">Buy — pay with card</a>
-          <a class="btn btn-paypal" href="https://www.paypal.com/ncp/payment/UY5FY7UCJPDYG" target="_blank" rel="noopener noreferrer">Buy with PayPal</a>
+          <a class="btn btn-primary when-soon" href="mailto:alphamaxstudios@gmail.com?subject=Game%20Bot%20waitlist&body=Hi%2C%20please%20notify%20me%20when%20Game%20Bot%20launches.%0A%0AMy%20GPU%20(optional)%3A%20">Get notified at launch</a>
+          <a class="btn btn-primary when-live" data-checkout="stripe" href="#pricing" hidden>Buy — pay with card</a>
+          <a class="btn btn-paypal when-live" data-checkout="paypal" href="#pricing" hidden>Buy with PayPal</a>
         </div>
-        <p class="pay-methods"><strong>Card (Stripe)</strong> or <strong>PayPal</strong>. Same $99 price.</p>
+        <p class="pay-methods when-soon"><strong>Coming soon.</strong> Card (Stripe) and PayPal are not open yet.</p>
+        <p class="pay-methods when-live" hidden><strong>Card (Stripe)</strong> or <strong>PayPal</strong>. Same $99 price.</p>
         <p class="note legal">If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may immediately revoke the license key and disable download access. You must not keep using the product after it is revoked.</p>
-        <p class="note">Questions or download help: <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a></p>
+        <p class="note when-soon">No checkout yet. Get notified and we will email <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a> when you can buy.</p>
+        <p class="note when-live" hidden>Questions or download help: <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a></p>
       </div>
     </div>
   </section>
@@ -180,7 +186,7 @@
       <details><summary>Does it publish to Steam for me?</summary><p>It prepares store copy and checklists. Steam tax forms, App ID purchases and release clicks always stay with you.</p></details>
       <details><summary>What if I don't have an NVIDIA GPU?</summary><p>Today Game Bot needs an NVIDIA GPU with 8&nbsp;GB+ VRAM. <strong>AMD support is coming soon.</strong> Please check your GPU before buying.</p></details>
       <details><summary>What languages does the app support?</summary><p>The current Game Bot build includes a language/region selector, so the app UI is multi-language. Choose your language and region in the app.</p></details>
-      <details><summary>How can I pay?</summary><p>Pay $99 once with a <a href="https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00" target="_blank" rel="noopener noreferrer">card through Stripe</a> or with <a href="https://www.paypal.com/ncp/payment/UY5FY7UCJPDYG" target="_blank" rel="noopener noreferrer">PayPal</a>. After a successful payment, you receive a license key and the download by email. If that email does not arrive, contact <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a>.</p></details>
+      <details><summary>How can I pay?</summary><p class="when-soon">Checkout is coming soon. Card (Stripe) and PayPal are not open yet. <a href="mailto:alphamaxstudios@gmail.com?subject=Game%20Bot%20waitlist&body=Hi%2C%20please%20notify%20me%20when%20Game%20Bot%20launches.%0A%0AMy%20GPU%20(optional)%3A%20">Get notified</a> and we will email you when you can buy. After a successful payment, you receive a license key and the download by email for one PC. All sales are final &mdash; no refunds.</p><p class="when-live" hidden>Pay $99 once with a <a data-checkout="stripe" href="#pricing">card through Stripe</a> or with <a data-checkout="paypal" href="#pricing">PayPal</a>. After a successful payment, you receive a license key and the download by email. If that email does not arrive, contact <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a>.</p></details>
       <details><summary>Refunds and licensing?</summary><p>All sales are final &mdash; no refunds. Game Bot is a digital good. One purchase is for one PC: after a successful payment you receive a license key and the download by email, and Game Bot binds to the computer it is installed on. Moving to a new PC needs a new purchase or an approved license transfer. If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may immediately revoke the license key and disable download access. You must not keep using the product after it is revoked. Software is provided as-is.</p></details>
       <details><summary>Do I need Unity?</summary><p>Only if you want the project opened and built in Unity. Unreal works the same way once installed. Design, docs, Blender assets and prep steps work without either engine.</p></details>
     </div>
@@ -192,6 +198,25 @@
 </footer>
 <script>
 (function () {
+  // BUY_LIVE=false keeps public checkout on Coming soon.
+  // One-line flip: set BUY_LIVE to true to show Stripe and PayPal buttons.
+  var BUY_LIVE = false;
+  var CHECKOUT = {
+    stripe: "https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00",
+    paypal: "https://www.paypal.com/ncp/payment/UY5FY7UCJPDYG"
+  };
+  if (BUY_LIVE) {
+    document.body.classList.add("buy-live");
+    document.querySelectorAll(".when-live").forEach(function (el) { el.hidden = false; });
+    document.querySelectorAll(".when-soon").forEach(function (el) { el.hidden = true; });
+    document.querySelectorAll("[data-checkout]").forEach(function (el) {
+      var url = CHECKOUT[el.getAttribute("data-checkout")];
+      if (!url) return;
+      el.href = url;
+      el.target = "_blank";
+      el.rel = "noopener noreferrer";
+    });
+  }
   var params = new URLSearchParams(window.location.search);
   if (params.get("paid") !== "1") return;
   var note = document.getElementById("paid-note");

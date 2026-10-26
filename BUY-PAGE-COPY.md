@@ -31,8 +31,13 @@ Game Bot runs the real studio steps for you, and its tools do the work instead o
 - Ollama + local models (downloaded once)
 - Unity or Unreal (optional, for opening and building the project); Blender for one-of-a-kind assets
 
-### Price
-$99 one-time. Pay with card through Stripe (https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00) or PayPal (https://www.paypal.com/ncp/payment/UY5FY7UCJPDYG). One purchase = one PC. After a successful payment, the buyer receives a license key and the download by email. All sales final, no refunds (digital goods). If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may immediately revoke the license key and disable download access. The buyer must not keep using the product after it is revoked. Questions or download help: alphamaxstudios@gmail.com.
+### Price (public — checkout coming soon)
+$99 one-time. Checkout is coming soon for card (Stripe) and PayPal. Get notified at alphamaxstudios@gmail.com. One purchase = one PC. After a successful payment, the buyer receives a license key and the download by email. All sales final, no refunds (digital goods). If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may immediately revoke the license key and disable download access. The buyer must not keep using the product after it is revoked.
+
+### Checkout links (do not publish until BUY_LIVE is true)
+Leave `var BUY_LIVE = false` in `index.html` until launch. Then set it to `true`.
+- Card (Stripe): https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00
+- PayPal: https://www.paypal.com/ncp/payment/UY5FY7UCJPDYG
 
 ## Tags
 game development, AI, local LLM, Ollama, Unity, game design, indie dev, tools, Windows

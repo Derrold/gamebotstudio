@@ -17,6 +17,8 @@ header.nav{position:sticky;top:0;z-index:10;background:rgba(7,13,28,.8);backdrop
 .btn-paypal{background:rgba(255,196,57,.12);color:#ffc439;border-color:rgba(255,196,57,.55)}
 .btn-paypal:hover{background:rgba(255,196,57,.22)}
 .btn-sm{padding:8px 14px;font-size:.9rem}
+body:not(.buy-live) .when-live{display:none !important}
+body.buy-live .when-soon{display:none !important}
 .hero{padding:88px 0 28px;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
 .eyebrow{display:inline-block;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:12px}
 h1{font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.08;margin:0 0 16px}

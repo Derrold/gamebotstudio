@@ -14,8 +14,9 @@ DEPLOY-GITHUB-PAGES.md   deploy + Porkbun DNS steps
 ```
 
 - **Preview locally:** open `index.html` in a browser, or run `python -m http.server 8000` in this folder.
-- **Checkout:** each buy spot offers two live options, both opened in a new tab. **Pay with card** uses the Stripe Payment Link (`https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00`). **PayPal** uses `https://www.paypal.com/ncp/payment/UY5FY7UCJPDYG`. Support stays `mailto:alphamaxstudios@gmail.com`.
-- **After payment:** a return to `https://gamebotstudio.com/?paid=1` shows a thank-you. A successful payment includes a license key and the download by email. One purchase is one PC. Sales are final (digital goods, no refunds). If a payment is disputed, charged back, reversed, or fails to clear, the license key may be revoked and download access disabled. Stripe redirects to `?paid=1`.
+- **Checkout is not live.** Header, hero, pricing, and the “How can I pay?” FAQ say Coming soon and offer a notify email. They do not open Stripe or PayPal.
+- **One-line flip:** in `index.html`, change `var BUY_LIVE = false;` to `var BUY_LIVE = true;`. That reveals Pay with card and PayPal, and points those controls at the `CHECKOUT` URLs in the same script (Stripe `https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00`, PayPal `https://www.paypal.com/ncp/payment/UY5FY7UCJPDYG`). Leave it `false` until Derrold turns checkout on.
+- **After payment:** a return to `https://gamebotstudio.com/?paid=1` shows a thank-you. A successful payment includes a license key and the download by email. One purchase is one PC. Sales are final (digital goods, no refunds). If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may revoke the license key and disable download access. Stripe can redirect to `?paid=1` once checkout is live.
 - **Language:** the current build includes a language/region selector (multi-language UI).
 - **Price:** $99 one-time in the `#pricing` section.
 - **Logo:** to use the chrome robot PNG instead, put it in `assets/` and replace the `<svg><use href="#gb-logo"/></svg>` tags with `<img>`.

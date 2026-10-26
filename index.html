@@ -42,18 +42,24 @@
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
-    <a class="btn btn-primary btn-sm" href="mailto:alphamaxstudios@gmail.com?subject=Game%20Bot%20waitlist&body=Hi%2C%20please%20notify%20me%20when%20Game%20Bot%20launches.%0A%0AMy%20GPU%20(optional)%3A%20">Get notified</a>
+    <a class="btn btn-primary btn-sm" href="https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00" target="_blank" rel="noopener noreferrer">Buy — pay with card</a>
   </div>
 </header>
 
 <main id="top">
+  <div id="paid-note" class="paid-note" role="status" hidden>
+    <div class="wrap">
+      <strong>Thank you — payment received.</strong>
+      <p>Email <a href="mailto:alphamaxstudios@gmail.com?subject=Game%20Bot%20download%20instructions">alphamaxstudios@gmail.com</a> and we will send your download instructions. One purchase covers one PC. All sales are final &mdash; no refunds.</p>
+    </div>
+  </div>
   <div class="wrap hero">
     <div>
       <span class="eyebrow">Windows desktop · Local AI</span>
       <h1>Your local <span class="chrome">automatic game studio</span>.</h1>
       <p class="lead">Game Bot is a local AI studio assistant that runs the game-dev pipeline for you — from pitch and design to a playable start, then assets, Blender one-of-a-kind pieces, docs, legal, QA and Steam prep. It runs on your own PC with unlimited local LLM use. No cloud usage caps.</p>
       <div class="cta">
-        <a class="btn btn-primary" href="mailto:alphamaxstudios@gmail.com?subject=Game%20Bot%20waitlist&body=Hi%2C%20please%20notify%20me%20when%20Game%20Bot%20launches.%0A%0AMy%20GPU%20(optional)%3A%20">Coming soon — get notified</a>
+        <a class="btn btn-primary" href="https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00" target="_blank" rel="noopener noreferrer">Buy — pay with card</a>
         <a class="btn btn-ghost" href="#pipeline">See how it works</a>
       </div>
       <div class="pills">
@@ -145,14 +151,15 @@
   <section id="pricing">
     <div class="wrap">
       <div class="price">
-        <span class="tag">Coming soon</span>
+        <span class="tag">Available now</span>
         <h2 style="margin-top:14px">Game Bot</h2>
-        <div class="amt">$99 <small>launch price · one-time</small></div>
-        <p class="muted">One-time purchase for one PC. All sales final &mdash; no refunds. Final checkout link announced at launch.</p>
+        <div class="amt">$99 <small>one-time</small></div>
+        <p class="muted">One-time purchase for one PC. All sales final &mdash; no refunds. Game Bot binds to the computer it is installed on.</p>
         <div class="cta" style="justify-content:center">
-          <a class="btn btn-primary" href="mailto:alphamaxstudios@gmail.com?subject=Game%20Bot%20waitlist&body=Hi%2C%20please%20notify%20me%20when%20Game%20Bot%20launches.%0A%0AMy%20GPU%20(optional)%3A%20">Get notified at launch</a>
+          <a class="btn btn-primary" href="https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00" target="_blank" rel="noopener noreferrer">Buy — pay with card</a>
         </div>
-        <p class="note">No checkout yet. The button opens an email to <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a>, and we'll reply when it's ready.</p>
+        <p class="pay-methods"><strong>Card (Stripe)</strong> now. PayPal coming soon.</p>
+        <p class="note">Questions or download help: <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a></p>
       </div>
     </div>
   </section>
@@ -165,6 +172,7 @@
       <details><summary>Does it need the cloud or a subscription?</summary><p>No. It runs local models through Ollama on your PC, so there are no cloud usage caps or per-message fees.</p></details>
       <details><summary>Does it publish to Steam for me?</summary><p>It prepares store copy and checklists. Steam tax forms, App ID purchases and release clicks always stay with you.</p></details>
       <details><summary>What if I don't have an NVIDIA GPU?</summary><p>Today Game Bot needs an NVIDIA GPU with 8&nbsp;GB+ VRAM. <strong>AMD support is coming soon.</strong> Please check your GPU before buying.</p></details>
+      <details><summary>How can I pay?</summary><p>Pay $99 once with a card through Stripe. PayPal is coming soon. After payment, email <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a> for download instructions.</p></details>
       <details><summary>Refunds and licensing?</summary><p>All sales are final &mdash; no refunds. One purchase = one PC: Game Bot binds to the computer it's installed on. Moving to a new PC needs a new purchase or an approved license transfer. Software is provided as-is.</p></details>
       <details><summary>Do I need Unity?</summary><p>Only if you want the project opened and built in Unity. Unreal works the same way once installed. Design, docs, Blender assets and prep steps work without either engine.</p></details>
     </div>
@@ -174,5 +182,14 @@
 <footer>
   <div class="wrap">© 2026 Game Bot Studio · <a href="https://gamebotstudio.com">gamebotstudio.com</a> · contact <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a><br><span style="font-size:.8rem">Unity is a trademark of Unity Technologies. Steam is a trademark of Valve Corporation. NVIDIA is a trademark of NVIDIA Corporation. Game Bot is not affiliated with or endorsed by them.</span></div>
 </footer>
+<script>
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  if (params.get("paid") !== "1") return;
+  var note = document.getElementById("paid-note");
+  if (!note) return;
+  note.hidden = false;
+})();
+</script>
 </body>
 </html>

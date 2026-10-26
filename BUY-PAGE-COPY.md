@@ -27,12 +27,12 @@ Game Bot runs the real studio steps for you, and its tools do the work instead o
 ### Requirements
 - Windows 10/11 64-bit
 - NVIDIA GPU with 8 GB+ VRAM (AMD support coming soon)
-- One purchase = one PC. After a successful payment, the buyer receives a license key and the download by email. All sales final, no refunds (digital goods). If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may immediately revoke the license key and disable download access. The buyer must not keep using the product after it is revoked.
+- One purchase = one PC. After a successful payment, the buyer creates or signs in to an account on gamebotstudio.com to download the installer and see their license key. Buyer accounts are not open yet. All sales final, no refunds (digital goods). If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may immediately revoke the license key and disable download access. The buyer must not keep using the product after it is revoked.
 - Ollama + local models (downloaded once)
 - Unity or Unreal (optional, for opening and building the project); Blender for one-of-a-kind assets
 
 ### Price (public — checkout coming soon)
-$99 one-time. Checkout is coming soon for card (Stripe) and PayPal. Get notified at alphamaxstudios@gmail.com. One purchase = one PC. After a successful payment, the buyer receives a license key and the download by email. All sales final, no refunds (digital goods). If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may immediately revoke the license key and disable download access. The buyer must not keep using the product after it is revoked.
+$99 one-time. Checkout is coming soon for card (Stripe) and PayPal. Get notified at alphamaxstudios@gmail.com. One purchase = one PC. After a successful payment, the buyer creates or signs in to an account on gamebotstudio.com to download the installer and see their license key. Buyer accounts are not open yet. All sales final, no refunds (digital goods). If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may immediately revoke the license key and disable download access. The buyer must not keep using the product after it is revoked.
 
 ### Checkout links (do not publish until BUY_LIVE is true)
 Leave `var BUY_LIVE = false` in `index.html` until launch. Then set it to `true`.

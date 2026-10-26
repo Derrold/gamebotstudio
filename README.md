@@ -14,7 +14,7 @@ DEPLOY-GITHUB-PAGES.md   deploy + Porkbun DNS steps
 ```
 
 - **Preview locally:** open `index.html` in a browser, or run `python -m http.server 8000` in this folder.
-- **Waitlist:** every "Get notified" button is a `mailto:derroldd@gmail.com` link with a pre-filled subject. There's no form backend. To switch later, swap the links for a Formspree, Buttondown or Lemon Squeezy checkout URL.
+- **Waitlist:** every "Get notified" button is a `mailto:alphamaxstudios@gmail.com` link with a pre-filled subject. There's no form backend. To switch later, swap the links for a Formspree, Buttondown or Lemon Squeezy checkout URL.
 - **Price:** shown as "Coming soon · $99". Edit the `#pricing` section if launch pricing changes.
 - **Logo:** to use the chrome robot PNG instead, put it in `assets/` and replace the `<svg><use href="#gb-logo"/></svg>` tags with `<img>`.
 - **Deploy:** see `DEPLOY-GITHUB-PAGES.md`. Any static host also works (Porkbun Static Hosting, Netlify, Cloudflare Pages); just upload the folder with `index.html` at the web root.

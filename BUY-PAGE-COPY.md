@@ -31,7 +31,7 @@ Game Bot runs the real studio steps for you, and its tools do the work instead o
 - Unity or Unreal (optional, for opening and building the project); Blender for one-of-a-kind assets
 
 ### Price
-$99 one-time. Coming soon. Email derroldd@gmail.com to get notified.
+$99 one-time. Coming soon. Email alphamaxstudios@gmail.com to get notified.
 
 ## Tags
 game development, AI, local LLM, Ollama, Unity, game design, indie dev, tools, Windows

@@ -51,6 +51,12 @@ ul.check.human li::before{background:var(--red)}
 .price .amt small{font-size:1rem;color:var(--mut);font-weight:600}
 .tag{display:inline-block;background:rgba(239,68,68,.15);color:#fca5a5;border:1px solid rgba(239,68,68,.4);border-radius:999px;padding:4px 12px;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
 .note{font-size:.9rem;color:var(--mut);margin-top:14px}
+.pay-methods{margin:16px 0 0;color:var(--mut);font-size:.95rem}
+.pay-methods strong{color:var(--txt)}
+.paid-note{background:rgba(34,197,94,.12);border-bottom:1px solid rgba(34,197,94,.4);padding:18px 0;text-align:left}
+.paid-note[hidden]{display:none}
+.paid-note strong{color:#bbf7d0;font-size:1.05rem}
+.paid-note p{margin:6px 0 0;color:var(--txt)}
 details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
 summary{cursor:pointer;font-weight:700}details p{color:var(--mut);margin:10px 0 0}
 footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mut);font-size:.9rem;text-align:center}

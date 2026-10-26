@@ -18,14 +18,15 @@ Game Bot runs the real studio steps for you, and its tools do the work instead o
 - **Steam prep:** store-page copy and a launch checklist
 
 **Local and unlimited.** Runs on local LLMs through Ollama. No cloud quotas, no per-message fees, and your ideas stay on your machine.
-**Auto GPU pick.** Detects your VRAM and chooses an edition that fits (6 GB+).
+**Auto GPU pick.** Detects your VRAM and automatically picks the right AI model (8 GB+). AMD support coming soon.
 **You stay in charge.** Steam tax forms, App ID purchases, release clicks and final legal sign-off always stay with you.
 
 **Honest note:** Game Bot can push a project toward AAA quality over time, and it can build a full hunting-style game along the path of pitch, project setup, systems, then assets and Blender one-of-a-kind art. It does not clone a specific game. Start with a grey-box, then add assets or whatever you need.
 
 ### Requirements
 - Windows 10/11 64-bit
-- NVIDIA GPU recommended (6 GB+ VRAM editions)
+- NVIDIA GPU with 8 GB+ VRAM (AMD support coming soon)
+- One purchase = one PC. All sales final, no refunds.
 - Ollama + local models (downloaded once)
 - Unity or Unreal (optional, for opening and building the project); Blender for one-of-a-kind assets
 

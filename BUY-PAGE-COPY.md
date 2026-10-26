@@ -4,7 +4,7 @@
 Your local automatic game studio. Unlimited local AI, no cloud caps.
 
 ## Short blurb (~50 words)
-Game Bot is a Windows desktop AI studio assistant that runs the game-dev pipeline on your own PC: pitch, design doc, Unity grey-box, docs, legal drafts, QA checklists and Steam prep. It uses local models through Ollama, so there are no usage caps or subscriptions, and it picks the right model for your GPU automatically.
+Game Bot is a Windows desktop AI studio assistant that runs the game-dev pipeline on your own PC: pitch, design doc, grey-box start then assets and Blender one-of-a-kind pieces, docs, legal drafts, QA checklists and Steam prep. It uses local models through Ollama, so there are no usage caps or subscriptions, and it picks the right model for your GPU automatically.
 
 ## Full description
 **Turn a game idea into an organized, playable starting point without leaving your PC.**
@@ -13,7 +13,7 @@ Game Bot runs the real studio steps for you, and its tools do the work instead o
 
 - **Pitch:** concept, hook, core loop, audience, scope
 - **Design:** a game design doc with mechanics, levels and progression
-- **Unity grey-box:** a generated blockout project with starter scripts, plus an optional build
+- **Grey-box → assets & Blender:** start with a grey-box, then add assets or whatever you need — including one-of-a-kind design in Blender
 - **Docs, legal, QA:** readme, EULA/privacy drafts, test checklists
 - **Steam prep:** store-page copy and a launch checklist
 
@@ -21,13 +21,13 @@ Game Bot runs the real studio steps for you, and its tools do the work instead o
 **Auto GPU pick.** Detects your VRAM and chooses an edition that fits (6 GB+).
 **You stay in charge.** Steam tax forms, App ID purchases, release clicks and final legal sign-off always stay with you.
 
-**Honest note:** Game Bot can push a project toward AAA quality over time, and it can build a full hunting-style game along the path of pitch, Unity project, guns and systems, then iterate. It does not one-click ship a finished AAA title or clone a specific game. Grey-box and pipeline help; polish is still a long grind.
+**Honest note:** Game Bot can push a project toward AAA quality over time, and it can build a full hunting-style game along the path of pitch, project setup, systems, then assets and Blender one-of-a-kind art. It does not clone a specific game. Start with a grey-box, then add assets or whatever you need.
 
 ### Requirements
 - Windows 10/11 64-bit
 - NVIDIA GPU recommended (6 GB+ VRAM editions)
 - Ollama + local models (downloaded once)
-- Unity (optional, for opening and building the grey-box)
+- Unity or Unreal (optional, for opening and building the project); Blender for one-of-a-kind assets
 
 ### Price
 $99 one-time. Coming soon. Email derroldd@gmail.com to get notified.

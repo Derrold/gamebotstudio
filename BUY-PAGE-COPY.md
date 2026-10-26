@@ -21,7 +21,7 @@ Game Bot runs the real studio steps for you, and its tools do the work instead o
 **Auto GPU pick.** Detects your VRAM and chooses an edition that fits (6 GB+).
 **You stay in charge.** Steam tax forms, App ID purchases, release clicks and final legal sign-off always stay with you.
 
-**Honest note:** Game Bot doesn't promise a finished AAA game. It's a local AI assistant that runs the pipeline and gives you a strong head start.
+**Honest note:** Game Bot can push a project toward AAA quality over time, and it can build a full hunting-style game along the path of pitch, Unity project, guns and systems, then iterate. It does not one-click ship a finished AAA title or clone a specific game. Grey-box and pipeline help; polish is still a long grind.
 
 ### Requirements
 - Windows 10/11 64-bit

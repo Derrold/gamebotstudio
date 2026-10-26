@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<meta name="gamebot-api-base" content="">
+<title>Your Game Bot account</title>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/account/account.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/">Game Bot</a>
+  <a href="/">Back to the site</a>
+</header>
+<main>
+  <section id="coming" class="card">
+    <p class="eyebrow">Coming soon</p>
+    <h1>Your Game Bot account</h1>
+    <p>Sign-in and the installer download are not turned on yet. If you already paid, email <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a> and we will send download instructions.</p>
+  </section>
+
+  <section id="gate" class="card" hidden>
+    <p class="eyebrow">Account</p>
+    <h1>Sign in</h1>
+    <p>Open the sign-in link in your Game Bot receipt. The link works once. After you are in, download GameBot-Setup.exe, run it, and enter your license key.</p>
+    <form id="resend">
+      <label for="email">Email a new sign-in link</label>
+      <div class="row">
+        <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+        <button class="btn" type="submit">Send link</button>
+      </div>
+    </form>
+    <p id="gate-msg" role="status"></p>
+  </section>
+
+  <section id="portal" class="card" hidden>
+    <p class="eyebrow">Account</p>
+    <h1>Your account</h1>
+    <p id="who"></p>
+    <ol id="steps" class="steps">
+      <li>Download GameBot-Setup.exe</li>
+      <li>Run the installer</li>
+      <li>Enter the license key</li>
+    </ol>
+    <div id="orders"></div>
+    <button id="agree" class="btn" type="button" hidden>I agree — enable my download</button>
+    <button id="download" class="btn btn-download" type="button" hidden>Download GameBot-Setup.exe</button>
+    <p id="stub-note" class="note" hidden></p>
+    <p><button id="logout" class="linkish" type="button">Sign out</button></p>
+  </section>
+
+  <section class="card terms">
+    <h2>Account terms</h2>
+    <p>Game Bot is licensed for one PC. One purchase binds to the computer you activate it on.</p>
+    <p>Do not share your login, magic sign-in link, or license key. Do not redistribute GameBot-Setup.exe or any copy of the installer.</p>
+    <p>The installer download works only while you are signed in and the license is active. A dispute, chargeback, refund, or reversal revokes the license and disables the download. If a dispute is decided in our favor and the payment was not refunded, access is turned back on.</p>
+    <p>All sales are final. No refunds.</p>
+  </section>
+  <p id="alert" class="alert" role="alert" hidden></p>
+</main>
+<script src="/account/account.js"></script>
+</body>
+</html>

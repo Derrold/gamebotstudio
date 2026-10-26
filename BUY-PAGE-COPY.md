@@ -35,3 +35,6 @@ $99 one-time. Pay with card through Stripe. PayPal coming soon. One purchase = o
 
 ## Tags
 game development, AI, local LLM, Ollama, Unity, game design, indie dev, tools, Windows
+
+## Account and license
+One purchase is for one PC. When automatic delivery is turned on, buyers sign in on the account page from an emailed link and download GameBot-Setup.exe there. That delivery is not turned on yet. Do not share your login, magic sign-in link, or license key. Do not redistribute GameBot-Setup.exe or any copy of the installer. A dispute, chargeback, refund, or reversal revokes the license and disables the download. If a dispute is decided in our favor and the payment was not refunded, access can be turned back on. All sales are final. No refunds.

@@ -19,3 +19,4 @@ DEPLOY-GITHUB-PAGES.md   deploy + Porkbun DNS steps
 - **Price:** $99 one-time in the `#pricing` section.
 - **Logo:** to use the chrome robot PNG instead, put it in `assets/` and replace the `<svg><use href="#gb-logo"/></svg>` tags with `<img>`.
 - **Deploy:** see `DEPLOY-GITHUB-PAGES.md`. Any static host also works (Porkbun Static Hosting, Netlify, Cloudflare Pages); just upload the folder with `index.html` at the web root.
+- **Account portal and license fulfillment:** see `fulfillment/README.md`. It is a separate Cloudflare Worker, **off** by default. The public site still says PayPal and automatic delivery are not turned on. `/account/` shows Coming soon until the flip-on steps in that README.

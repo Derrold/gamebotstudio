@@ -29,3 +29,6 @@ Porkbun → Domain Management → gamebotstudio.com → DNS. Delete the default 
 
 ## Updating
 Edit files, commit and push to `main`. Pages redeploys in about a minute.
+
+## Fulfillment is not part of Pages
+Pushing this repo does not issue licenses or accept webhooks. Account delivery is the Cloudflare Worker in `fulfillment/`. It ships **off**. The public pages keep Coming soon until you follow the flip-on list in `fulfillment/README.md`. The account page at `/account/` stays in that Coming soon state while its API base is empty.

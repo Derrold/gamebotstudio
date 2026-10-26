@@ -1,0 +1,29 @@
+# Copy to fulfillment/.dev.vars for `npx wrangler dev`.
+# Never commit .dev.vars. Leave secrets blank until you have SANDBOX values.
+# Do not put live Stripe, PayPal, or Resend secrets in this file.
+
+FULFILLMENT_MODE=off
+PAYPAL_ENV=sandbox
+PUBLIC_PORTAL_READY=
+SUPPORT_EMAIL=alphamaxstudios@gmail.com
+PUBLIC_SITE_URL=https://gamebotstudio.com
+ALLOWED_ORIGINS=https://gamebotstudio.com
+EXPECTED_AMOUNT_CENTS=9900
+EXPECTED_CURRENCY=usd
+MAGIC_TTL_SECONDS=86400
+SESSION_TTL_SECONDS=1209600
+
+# Stripe Dashboard → Developers → Webhooks → TEST mode endpoint → signing secret.
+STRIPE_WEBHOOK_SECRET=
+
+# PayPal Developer → Sandbox → REST app credentials + that app's webhook id.
+PAYPAL_CLIENT_ID=
+PAYPAL_CLIENT_SECRET=
+PAYPAL_WEBHOOK_ID=
+
+# Resend. Leave blank in test mode to keep the message as an admin-visible preview.
+RESEND_API_KEY=
+EMAIL_FROM=
+
+# openssl rand -hex 32
+ADMIN_TOKEN=

@@ -1,0 +1,36 @@
+# Game Bot account portal + license fulfillment. Deploys separately from GitHub Pages.
+# Default is OFF: verified webhooks are acknowledged and do not create accounts.
+# The installer download is session-only. There is no public file URL.
+# See fulfillment/README.md before changing FULFILLMENT_MODE or PUBLIC_PORTAL_READY.
+
+name = "gamebot-fulfillment"
+main = "src/worker.js"
+compatibility_date = "2026-10-26"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+FULFILLMENT_MODE = "off"
+PAYPAL_ENV = "sandbox"
+SUPPORT_EMAIL = "alphamaxstudios@gmail.com"
+PRODUCT_NAME = "Game Bot"
+EXPECTED_AMOUNT_CENTS = "9900"
+EXPECTED_CURRENCY = "usd"
+PUBLIC_SITE_URL = "https://gamebotstudio.com"
+ALLOWED_ORIGINS = "https://gamebotstudio.com"
+MAGIC_TTL_SECONDS = "86400"
+SESSION_TTL_SECONDS = "1209600"
+PRODUCT_OBJECT_KEY = "GameBot-Setup.exe"
+# PUBLIC_PORTAL_READY is intentionally unset. Live mode refuses to fulfill until it is "1".
+
+# 1. npx wrangler kv namespace create LICENSES
+# 2. Uncomment and paste the id. Test mode will 503 until this binding exists.
+# [[kv_namespaces]]
+# binding = "LICENSES"
+# id = "PASTE_KV_NAMESPACE_ID"
+
+# Optional private download bucket. Do not commit the installer.
+# npx wrangler r2 bucket create gamebot-product
+# npx wrangler r2 object put gamebot-product/GameBot-Setup.exe --file /path/to/GameBot-Setup.exe
+# [[r2_buckets]]
+# binding = "PRODUCT_BUCKET"
+# bucket_name = "gamebot-product"

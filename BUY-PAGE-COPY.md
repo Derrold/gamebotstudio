@@ -18,7 +18,7 @@ Game Bot runs the real studio steps for you, and its tools do the work instead o
 - **Steam prep:** store-page copy and a launch checklist
 
 **Local and unlimited.** Runs on local LLMs through Ollama. No cloud quotas, no per-message fees, and local AI stays on your machine. Internet is still needed to install Ollama and download models, and later for asset downloads, web research, and other online steps.
-**Auto GPU pick.** Detects your VRAM and automatically picks the right AI model (8 GB+). AMD support coming soon.
+**Auto GPU pick.** Detects your VRAM and automatically picks the right AI model for NVIDIA and AMD (8 GB+). 12 GB+ gets a larger model.
 **You stay in charge.** Steam tax forms, App ID purchases, release clicks and final legal sign-off always stay with you.
 **Language.** The current build includes a language/region selector, so the app UI is multi-language.
 
@@ -26,7 +26,7 @@ Game Bot runs the real studio steps for you, and its tools do the work instead o
 
 ### Requirements
 - Windows 10/11 64-bit
-- NVIDIA GPU with 8 GB+ VRAM (AMD support coming soon)
+- GPU with 8 GB+ VRAM (NVIDIA or AMD). 12 GB+ automatically gets a larger model.
 - One purchase = one PC. The license is personal and non-transferable, except an approved license transfer. The buyer may not copy, resell, or redistribute the software, playbooks, or Alphamax designs. Games the buyer creates with Game Bot are theirs. After a successful payment, the buyer creates or signs in to an account on gamebotstudio.com to download the installer and see their license key. Buyer accounts are not open yet. All sales final, no refunds (digital goods). If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may immediately revoke the license key and disable download access. The buyer must not keep using the product after it is revoked.
 - Ollama + local models (install and first model download need internet; local AI then runs on the PC, with no cloud LLM subscription)
 - Internet again for optional online work: downloading assets, web research, and anything else that pulls from the network

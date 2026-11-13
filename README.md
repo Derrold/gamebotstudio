@@ -9,11 +9,15 @@ assets/favicon.svg       robot + controller mark (original)
 assets/logo.svg          same mark as a standalone file (for socials/README)
 CNAME                    gamebotstudio.com (GitHub Pages custom domain)
 .nojekyll                serve files as-is on GitHub Pages
+eula.html                Game Bot EULA (draft, pending legal review)
+privacy.html             Privacy policy (draft, pending legal review)
 BUY-PAGE-COPY.md         store blurbs (itch.io / Lemon Squeezy / Payhip)
 DEPLOY-GITHUB-PAGES.md   deploy + Porkbun DNS steps
 ```
 
 - **Preview locally:** open `index.html` in a browser, or run `python -m http.server 8000` in this folder.
+- **Legal pages:** `eula.html` and `privacy.html` are drafts pending legal review. Footer and pricing link to them.
+- **Waitlist:** public “Join the Early Access waitlist” buttons are `mailto:alphamaxstudios@gmail.com` with subject `Game Bot waitlist`. There is no form backend.
 - **Checkout is not live.** Header, hero, pricing, and the “How can I pay?” FAQ say Coming soon and offer a notify email. They do not open Stripe or PayPal.
 - **One-line flip:** in `index.html`, change `var BUY_LIVE = false;` to `var BUY_LIVE = true;`. That reveals Pay with card and PayPal, and points those controls at the `CHECKOUT` URLs in the same script (Stripe `https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00`, PayPal `https://www.paypal.com/ncp/payment/UY5FY7UCJPDYG`). Leave it `false` until Derrold turns checkout on.
 - **After payment:** a return to `https://gamebotstudio.com/?paid=1` shows a thank-you. The buyer creates or signs in to an account on gamebotstudio.com to download the installer and see their license key. One purchase is one PC. The license is personal and non-transferable, except an approved license transfer. Buyers may not copy, resell, or redistribute the software, playbooks, or Alphamax designs. Games the buyer creates with Game Bot are theirs. Sales are final (digital goods, no refunds). If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may revoke the license key and disable download access. Stripe can redirect to `?paid=1` once checkout is live.

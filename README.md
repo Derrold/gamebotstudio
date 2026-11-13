@@ -9,14 +9,14 @@ assets/favicon.svg       robot + controller mark (original)
 assets/logo.svg          same mark as a standalone file (for socials/README)
 CNAME                    gamebotstudio.com (GitHub Pages custom domain)
 .nojekyll                serve files as-is on GitHub Pages
-eula.html                Game Bot EULA (draft, pending legal review)
-privacy.html             Privacy policy (draft, pending legal review)
+eula.html                Game Bot EULA (effective November 13, 2026)
+privacy.html             Privacy policy (effective November 13, 2026)
 BUY-PAGE-COPY.md         store blurbs (itch.io / Lemon Squeezy / Payhip)
 DEPLOY-GITHUB-PAGES.md   deploy + Porkbun DNS steps
 ```
 
 - **Preview locally:** open `index.html` in a browser, or run `python -m http.server 8000` in this folder.
-- **Legal pages:** `eula.html` and `privacy.html` are drafts pending legal review. Footer and pricing link to them.
+- **Legal pages:** `eula.html` and `privacy.html` are effective November 13, 2026. Footer and pricing link to them.
 - **Waitlist:** public “Join the Early Access waitlist” buttons are `mailto:alphamaxstudios@gmail.com` with subject `Game Bot waitlist`. There is no form backend.
 - **Checkout is not live.** Header, hero, pricing, and the “How can I pay?” FAQ say Coming soon and offer a notify email. They do not open Stripe or PayPal.
 - **One-line flip:** in `index.html`, change `var BUY_LIVE = false;` to `var BUY_LIVE = true;`. That reveals Pay with card and PayPal, and points those controls at the `CHECKOUT` URLs in the same script (Stripe `https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00`, PayPal `https://www.paypal.com/ncp/payment/UY5FY7UCJPDYG`). Leave it `false` until Derrold turns checkout on.

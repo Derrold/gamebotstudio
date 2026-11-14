@@ -1,9 +1,9 @@
 {
   "version": "0.0.2",
   "url": "GameBot-0.0.2.zip",
-  "sha256": "276dfad79c9e44de558e0487b8a20fb992fb2e94fc85f01a23454a22f65e93d8",
-  "size": 1851534,
+  "sha256": "0c183031a2d0883a7571f1f8c5a1fecbcfc6fb5a7d2b5b89d90d4d6f9c0ea31e",
+  "size": 1855543,
   "released": "2026-11-13",
-  "notes": "Game Bot V0.02: typing eta, eat, status or ? now only shows progress (never starts tools or asks for a pack); owned-pack picks need a real number or name; files that hang Unity's importer (like Cliff Mansion bed.fbx) are skipped in every new game and a stuck import is caught after 3 minutes; r59 AI model setup.",
-  "signature": "0U2PolkRzHEXeQM5J5g/sXqOO9AG2wU7YIbaNSmfR+CS7Q74Cpu3Idk76Uv+3QfjLo5tEyaq77Bk//t4+h+sDQ=="
+  "notes": "Game Bot V0.02: typing eta, eat, status or ? now only shows progress (never starts tools or asks for a pack); owned-pack picks need a real number or name; files that hang Unity's importer (like Cliff Mansion bed.fbx) are skipped in every new game and a stuck import is caught after 3 minutes; r59 AI model setup; when Unity freezes on a file, Game Bot saves a hang report and asks before sending it (Preview / Send / Cancel).",
+  "signature": "+uJsDQ247pSloYloj97eaR2ahgicFBq/j/ul+NEEA5LBV/VdJ0pH+hDuASHh9rKRq8QSGu5bGE619RZ4ISZIDg=="
 }

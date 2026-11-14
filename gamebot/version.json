@@ -1,9 +1,9 @@
 {
   "version": "0.0.1",
   "url": "GameBot-0.0.1.zip",
-  "sha256": "17a54850b8ef16a982ef417cedcd8ae8be9844c748d79219dc0a8d8889a2caec",
-  "size": 1850544,
+  "sha256": "a65b2504c43530d5dd51d0ffe4e6fb3841396e1b3b7b9336db05c05ff980b7b1",
+  "size": 1849930,
   "released": "2026-11-13",
-  "notes": "Game Bot V0.01: updates now work in any folder name (spaces and apostrophes), offline AI model setup restored, hidden Python setup, clear pre-build checks and build error messages.",
-  "signature": "fbP9vE54e73xSstu/DDQxHSFCvBWVd5EPx8j9ZCKMp8vgbBuzFgdoDrW9B5OCFl10A/C4W8cqYi1o105ranEBg=="
+  "notes": "Game Bot V0.01: updates now work in any folder name (spaces and apostrophes), offline AI model setup with the r59 model, hidden Python setup, clear pre-build checks and build error messages.",
+  "signature": "wZ7wI9r6fGH2sw4Nx/dOi/zcAPejzoK0FJj70zddQLsSiTraT/Q7H3fjmb1SEImpznWL6broIRgxkFYkE6s/AA=="
 }

@@ -1,9 +1,9 @@
 {
-  "version": "0.0.2",
-  "url": "GameBot-0.0.2.zip",
-  "sha256": "0c183031a2d0883a7571f1f8c5a1fecbcfc6fb5a7d2b5b89d90d4d6f9c0ea31e",
-  "size": 1855543,
+  "version": "0.0.3",
+  "url": "GameBot-0.0.3.zip",
+  "sha256": "cc72e7ac22fb44813c46717eba8df011500aa6eaa7548bb4d61847e00bab7eaa",
+  "size": 1856894,
   "released": "2026-11-13",
-  "notes": "Game Bot V0.02: typing eta, eat, status or ? now only shows progress (never starts tools or asks for a pack); owned-pack picks need a real number or name; files that hang Unity's importer (like Cliff Mansion bed.fbx) are skipped in every new game and a stuck import is caught after 3 minutes; r59 AI model setup; when Unity freezes on a file, Game Bot saves a hang report and asks before sending it (Preview / Send / Cancel).",
-  "signature": "+uJsDQ247pSloYloj97eaR2ahgicFBq/j/ul+NEEA5LBV/VdJ0pH+hDuASHh9rKRq8QSGu5bGE619RZ4ISZIDg=="
+  "notes": "Game Bot V0.03: the build bar and status now show what Unity is doing - e.g. Compiling shaders: 83/2304 (first build is slow, this is normal), the file being imported, or the player build step. Rising shader progress counts as activity, so a slow first build is never mistaken for a hang. Includes V0.02 fixes (status-only eta/eat/?, known-bad import skip, hang reports that ask before sending).",
+  "signature": "WEHs5dVWHNKAzgJgZSJzFc+sOLtXN3JBpxFpyRXVd1ExpoZGDN0i9ukJJEZCqj3HzX5H52VWiseKcc7ELU7GAg=="
 }

@@ -1,9 +1,9 @@
 {
-  "version": "0.0.4",
-  "url": "GameBot-0.0.4.zip",
-  "sha256": "fdea2da5461bd1f27e82cf8c21fe7eeef392dcb291600dc9d6f394463a93a1b0",
-  "size": 1883226,
+  "version": "0.0.5",
+  "url": "GameBot-0.0.5.zip",
+  "sha256": "99d3696b084b2d5532552c1391889c9345c497aff5d9fe6598ea9347ca5feafc",
+  "size": 1883862,
   "released": "2026-11-13",
-  "notes": "Game Bot V0.04: updates show a progress bar (Downloading, Verifying signature, Backing up your data, Installing, Restarting) with clear success or failure text. The AI is unloaded from the GPU while Unity builds and chat is queued until the build ends. Shooters use theme-matching packs (sci-fi env, guns, enemies) over generic trees and houses, always put a gun in hand and spawn enemies, and say when a placeholder was needed. Missing packs: Game Bot opens your Unity project and fetches your My Assets packs; every game shows in Unity Hub.",
-  "signature": "wnbU8qPgODAwoZKZG5pd7FwJz77SN2hmEX6euPAVbLa7g3Vg9AOOnVyLaDaCgITxs7OoltoNPyeQQu7KZf3xDA=="
+  "notes": "Game Bot V0.05: the update-available banner always shows when a new version is out, even right after an update (the 'updated' notice shows once per version and never hides it). Game Bot re-checks for updates every 2 hours while it runs, and Later hides a banner for that version only. Includes everything in V0.04: update progress bar, AI paused while Unity builds, themed shooter packs with a gun in hand and enemies.",
+  "signature": "bW/CnufdpM7rpGD0cLUuseAggAg9EGSYY5fTuiVXoLdMpfnQMefmU3XwDREER+9i/98NO0C6BbXUE/UT9DS8BA=="
 }

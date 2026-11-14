@@ -1,9 +1,9 @@
 {
-  "version": "0.0.3",
-  "url": "GameBot-0.0.3.zip",
-  "sha256": "cc72e7ac22fb44813c46717eba8df011500aa6eaa7548bb4d61847e00bab7eaa",
-  "size": 1856894,
+  "version": "0.0.4",
+  "url": "GameBot-0.0.4.zip",
+  "sha256": "fdea2da5461bd1f27e82cf8c21fe7eeef392dcb291600dc9d6f394463a93a1b0",
+  "size": 1883226,
   "released": "2026-11-13",
-  "notes": "Game Bot V0.03: the build bar and status now show what Unity is doing - e.g. Compiling shaders: 83/2304 (first build is slow, this is normal), the file being imported, or the player build step. Rising shader progress counts as activity, so a slow first build is never mistaken for a hang. Includes V0.02 fixes (status-only eta/eat/?, known-bad import skip, hang reports that ask before sending).",
-  "signature": "WEHs5dVWHNKAzgJgZSJzFc+sOLtXN3JBpxFpyRXVd1ExpoZGDN0i9ukJJEZCqj3HzX5H52VWiseKcc7ELU7GAg=="
+  "notes": "Game Bot V0.04: updates show a progress bar (Downloading, Verifying signature, Backing up your data, Installing, Restarting) with clear success or failure text. The AI is unloaded from the GPU while Unity builds and chat is queued until the build ends. Shooters use theme-matching packs (sci-fi env, guns, enemies) over generic trees and houses, always put a gun in hand and spawn enemies, and say when a placeholder was needed. Missing packs: Game Bot opens your Unity project and fetches your My Assets packs; every game shows in Unity Hub.",
+  "signature": "wnbU8qPgODAwoZKZG5pd7FwJz77SN2hmEX6euPAVbLa7g3Vg9AOOnVyLaDaCgITxs7OoltoNPyeQQu7KZf3xDA=="
 }

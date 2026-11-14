@@ -1,9 +1,9 @@
 {
-  "version": "0.0.6",
-  "url": "GameBot-0.0.6.zip",
-  "sha256": "857c311b70fd7b538a1acfdf8eddf81a80c6474ca345187569f88777e5c25cd9",
-  "size": 1883870,
+  "version": "0.0.7",
+  "url": "GameBot-0.0.7.zip",
+  "sha256": "8355308f9d5d93b634b00272a74241db20420ee3e4eedd7e0f4844f74f0a2056",
+  "size": 1888029,
   "released": "2026-11-13",
-  "notes": "Game Bot V0.06: Early Access is NVIDIA-only (RTX 20 series or newer, 8 GB+ VRAM, 12 GB recommended; AMD support coming later). The AI model is no longer unloaded during Unity builds, and chat works normally while Unity builds. Keeps the update progress bar, the update-banner fix and themed shooter packs.",
-  "signature": "wJ0pDgCTIekC9vqWaiPnSLnu/kAVoy4R8VirC1speH/UHC9aBi/LntsbaYv3an8A9DV2vAVVlJrgRsIr+Eo/Bg=="
+  "notes": "Game Bot V0.07: on PCs with only an AMD card, Game Bot starts Ollama with Vulkan so the AI runs on the GPU (NVIDIA cards keep using CUDA), with a safe 8192 context on 8 GB AMD cards. Sci-fi games with no sci-fi environment pack get sci-fi stand-ins (metal floor and wall panels, crates, glowing light strips, cool sky) instead of trees and houses, and the chat names a pack that would look better. Early Access is still NVIDIA-only.",
+  "signature": "x/aYbBRpjKz8mVzvd0ivjwLfwflNbrkbh7l+3Wi3Vj5TK4peV94GEeRxtEcJkjcw5ai4Fkfn59uPl/1aQUoEBA=="
 }

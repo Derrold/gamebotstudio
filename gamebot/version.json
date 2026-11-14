@@ -1,9 +1,9 @@
 {
-  "version": "0.0.7",
-  "url": "GameBot-0.0.7.zip",
-  "sha256": "8355308f9d5d93b634b00272a74241db20420ee3e4eedd7e0f4844f74f0a2056",
-  "size": 1888029,
-  "released": "2026-11-13",
-  "notes": "Game Bot V0.07: on PCs with only an AMD card, Game Bot starts Ollama with Vulkan so the AI runs on the GPU (NVIDIA cards keep using CUDA), with a safe 8192 context on 8 GB AMD cards. Sci-fi games with no sci-fi environment pack get sci-fi stand-ins (metal floor and wall panels, crates, glowing light strips, cool sky) instead of trees and houses, and the chat names a pack that would look better. Early Access is still NVIDIA-only.",
-  "signature": "x/aYbBRpjKz8mVzvd0ivjwLfwflNbrkbh7l+3Wi3Vj5TK4peV94GEeRxtEcJkjcw5ai4Fkfn59uPl/1aQUoEBA=="
+  "version": "0.0.8",
+  "url": "GameBot-0.0.8.zip",
+  "sha256": "9972c20986108a6a30bbd87a56d6644f8a0e042a88d275460d28b80bb0599530",
+  "size": 1899815,
+  "released": "2026-11-14",
+  "notes": "Game Bot V0.08: AMD unlocked - NVIDIA RTX 20 series or newer, or AMD RX 6000 series or newer (Vulkan), 8 GB VRAM minimum, 12 GB recommended (RX 5000 runs with a may-be-unstable note). Smarter chat: messages that are not a command get a real answer, a concrete proposal you confirm with yes, or one clear question instead of a canned build-stage reply; it never claims a change it has not made, and feedback like the gun feels weak gets specific damage, fire-rate, recoil, muzzle flash, sound and hit-feedback options for your game.",
+  "signature": "/yAGldfP5L0+68bGxGoC7Z74NdNMyS3B9vXmFQzQCeVl2ScBdGdmM25bZGZTlFd0DsQYxCUB2v7Awu+fti6TAA=="
 }

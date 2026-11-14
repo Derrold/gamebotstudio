@@ -1,9 +1,9 @@
 {
-  "version": "0.0.9",
-  "url": "GameBot-0.0.9.zip",
-  "sha256": "41f9740670c8915761a2c47b54ead288a2a689f7fb626bb97ddad32f4366fdfa",
-  "size": 1908967,
+  "version": "0.0.10",
+  "url": "GameBot-0.0.10.zip",
+  "sha256": "bf843023f908936da2fa540029c3749b96f7c0154722a0e22b74b5ce895e5f23",
+  "size": 1917658,
   "released": "2026-11-14",
-  "notes": "Game Bot V0.09: Get the starter packs - when your game is missing a pack, Game Bot lists free Unity Asset Store packs (a basic set plus picks for your genre) as clickable links; add them to My Assets and Game Bot downloads and imports them, and packs you already own are marked owned. Requests like make the enemies smarter now get concrete, game-aware options.",
-  "signature": "rAQyCuoWpfi1u9WXV6mAlIRA+aNSsDZfIxwLWAGm1YedAtqCndgEyLeVzZvDczuJl3ZPX2Kf+1ZIdPMNU+qBAw=="
+  "notes": "Game Bot V0.10: Chat understands typos and slightly-off wording — confident matches are applied silently, and if it's unsure it asks 'Did you mean X? (yes runs it)'. 'Add more enemies' / 'more enemies' now increases the enemy count in games that already have enemies (for example a sci-fi FPS) and asks before rebuilding, instead of looking for an empty folder or offering packs. Packs are offered only when the game has no enemy system.",
+  "signature": "b3Jvcw6lIITh8Yw0sn6sBadN96xjf2l3kQertbHLlIeBJAbEMCZpSLMN49IHGKGj6LV8LktfiMMnGNmrh3DZDg=="
 }

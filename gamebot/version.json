@@ -1,9 +1,9 @@
 {
-  "version": "0.0.8",
-  "url": "GameBot-0.0.8.zip",
-  "sha256": "9972c20986108a6a30bbd87a56d6644f8a0e042a88d275460d28b80bb0599530",
-  "size": 1899815,
+  "version": "0.0.9",
+  "url": "GameBot-0.0.9.zip",
+  "sha256": "41f9740670c8915761a2c47b54ead288a2a689f7fb626bb97ddad32f4366fdfa",
+  "size": 1908967,
   "released": "2026-11-14",
-  "notes": "Game Bot V0.08: AMD unlocked - NVIDIA RTX 20 series or newer, or AMD RX 6000 series or newer (Vulkan), 8 GB VRAM minimum, 12 GB recommended (RX 5000 runs with a may-be-unstable note). Smarter chat: messages that are not a command get a real answer, a concrete proposal you confirm with yes, or one clear question instead of a canned build-stage reply; it never claims a change it has not made, and feedback like the gun feels weak gets specific damage, fire-rate, recoil, muzzle flash, sound and hit-feedback options for your game.",
-  "signature": "/yAGldfP5L0+68bGxGoC7Z74NdNMyS3B9vXmFQzQCeVl2ScBdGdmM25bZGZTlFd0DsQYxCUB2v7Awu+fti6TAA=="
+  "notes": "Game Bot V0.09: Get the starter packs - when your game is missing a pack, Game Bot lists free Unity Asset Store packs (a basic set plus picks for your genre) as clickable links; add them to My Assets and Game Bot downloads and imports them, and packs you already own are marked owned. Requests like make the enemies smarter now get concrete, game-aware options.",
+  "signature": "rAQyCuoWpfi1u9WXV6mAlIRA+aNSsDZfIxwLWAGm1YedAtqCndgEyLeVzZvDczuJl3ZPX2Kf+1ZIdPMNU+qBAw=="
 }

@@ -1,9 +1,9 @@
 {
-  "version": "0.0.1",
-  "url": "GameBot-0.0.1.zip",
-  "sha256": "a65b2504c43530d5dd51d0ffe4e6fb3841396e1b3b7b9336db05c05ff980b7b1",
-  "size": 1849930,
+  "version": "0.0.2",
+  "url": "GameBot-0.0.2.zip",
+  "sha256": "276dfad79c9e44de558e0487b8a20fb992fb2e94fc85f01a23454a22f65e93d8",
+  "size": 1851534,
   "released": "2026-11-13",
-  "notes": "Game Bot V0.01: updates now work in any folder name (spaces and apostrophes), offline AI model setup with the r59 model, hidden Python setup, clear pre-build checks and build error messages.",
-  "signature": "wZ7wI9r6fGH2sw4Nx/dOi/zcAPejzoK0FJj70zddQLsSiTraT/Q7H3fjmb1SEImpznWL6broIRgxkFYkE6s/AA=="
+  "notes": "Game Bot V0.02: typing eta, eat, status or ? now only shows progress (never starts tools or asks for a pack); owned-pack picks need a real number or name; files that hang Unity's importer (like Cliff Mansion bed.fbx) are skipped in every new game and a stuck import is caught after 3 minutes; r59 AI model setup.",
+  "signature": "0U2PolkRzHEXeQM5J5g/sXqOO9AG2wU7YIbaNSmfR+CS7Q74Cpu3Idk76Uv+3QfjLo5tEyaq77Bk//t4+h+sDQ=="
 }

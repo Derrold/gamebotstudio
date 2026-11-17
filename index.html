@@ -44,7 +44,7 @@
       <li><a href="#faq">FAQ</a></li>
     </ul>
     <div class="nav-buy">
-      <a class="btn btn-primary btn-sm when-soon" href="mailto:alphamaxstudios@gmail.com?subject=Game%20Bot%20waitlist&body=Hi%2C%20please%20notify%20me%20when%20Game%20Bot%20Early%20Access%20is%20available.%0A%0AMy%20GPU%20(optional)%3A%20">Join the waitlist</a>
+      <a class="btn btn-primary btn-sm when-soon" href="#waitlist">Notify me at launch</a>
       <a class="btn btn-primary btn-sm when-live" data-checkout="stripe" href="#pricing" hidden>Pay with card</a>
       <a class="btn btn-paypal btn-sm when-live" data-checkout="paypal" href="#pricing" hidden>PayPal</a>
     </div>
@@ -65,8 +65,19 @@
       <span class="eyebrow">Windows desktop · Local AI</span>
       <h1>Your local <span class="chrome">automatic game studio</span>.</h1>
       <p class="lead">Game Bot is a local AI studio assistant that runs the game-dev pipeline for you — from pitch and design to a playable start, then assets, Blender one-of-a-kind pieces, docs, legal, QA and Steam prep. It runs on your own PC with unlimited local LLM use. No cloud usage caps.</p>
+      <form class="waitlist-form when-soon" action="https://formsubmit.co/ajax/alphamaxstudios@gmail.com" method="POST" id="waitlist">
+          <input type="hidden" name="_subject" value="Game Bot waitlist signup">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" class="waitlist-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="waitlist-row">
+            <label class="visually-hidden" for="waitlist-email-hero">Email</label>
+            <input type="email" name="email" id="waitlist-email-hero" required placeholder="you@email.com" autocomplete="email">
+            <button type="submit" class="btn btn-primary">Notify me at launch</button>
+          </div>
+          <p class="waitlist-msg" role="status" hidden></p>
+          <p class="note waitlist-privacy">We'll only email you about the launch.</p>
+        </form>
       <div class="cta">
-        <a class="btn btn-primary when-soon" href="mailto:alphamaxstudios@gmail.com?subject=Game%20Bot%20waitlist&body=Hi%2C%20please%20notify%20me%20when%20Game%20Bot%20Early%20Access%20is%20available.%0A%0AMy%20GPU%20(optional)%3A%20">Join the Early Access waitlist</a>
         <a class="btn btn-primary when-live" data-checkout="stripe" href="#pricing" hidden>Buy — pay with card</a>
         <a class="btn btn-paypal when-live" data-checkout="paypal" href="#pricing" hidden>Buy with PayPal</a>
         <a class="btn btn-ghost" href="#pipeline">See how it works</a>
@@ -179,15 +190,26 @@
         <h2 style="margin-top:14px">Game Bot Early Access</h2>
         <div class="amt">$99 <small><span class="when-soon">launch price · </span>one-time</small></div>
         <p class="muted">Early Access is a tester build plus a one-time license for one PC. The full release price is TBD and will be higher. All sales final &mdash; no refunds.</p>
+        <form class="waitlist-form when-soon" action="https://formsubmit.co/ajax/alphamaxstudios@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Game Bot waitlist signup">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" class="waitlist-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="waitlist-row">
+            <label class="visually-hidden" for="waitlist-email-pricing">Email</label>
+            <input type="email" name="email" id="waitlist-email-pricing" required placeholder="you@email.com" autocomplete="email">
+            <button type="submit" class="btn btn-primary">Notify me at launch</button>
+          </div>
+          <p class="waitlist-msg" role="status" hidden></p>
+          <p class="note waitlist-privacy">We'll only email you about the launch.</p>
+        </form>
         <div class="cta" style="justify-content:center">
-          <a class="btn btn-primary when-soon" href="mailto:alphamaxstudios@gmail.com?subject=Game%20Bot%20waitlist&body=Hi%2C%20please%20notify%20me%20when%20Game%20Bot%20Early%20Access%20is%20available.%0A%0AMy%20GPU%20(optional)%3A%20">Join the Early Access waitlist</a>
           <a class="btn btn-primary when-live" data-checkout="stripe" href="#pricing" hidden>Buy — pay with card</a>
           <a class="btn btn-paypal when-live" data-checkout="paypal" href="#pricing" hidden>Buy with PayPal</a>
         </div>
-        <p class="pay-methods when-soon"><strong>Coming soon.</strong> Checkout is not open. The button opens an email to us, and we will reply when Early Access is available.</p>
+        <p class="pay-methods when-soon"><strong>Coming soon.</strong> Checkout is not open. Enter your email and we'll notify you when Early Access is available.</p>
         <p class="pay-methods when-live" hidden><strong>Card (Stripe)</strong> or <strong>PayPal</strong>. Same $99 price.</p>
         <p class="note legal">Early Access is unfinished tester software: features may change or break. The license is personal and non-transferable, except an approved license transfer. One purchase is one PC. You may not copy, resell, or redistribute the software, playbooks, or Alphamax designs. Games you create with Game Bot are yours. If a payment is disputed, charged back, reversed, or fails to clear, AlphaMax Studios / Game Bot may immediately revoke the license key and disable download access. You must not keep using the product after it is revoked. See the <a href="eula.html">EULA</a> and <a href="privacy.html">Privacy Policy</a>.</p>
-        <p class="note when-soon waitlist-legal">No checkout and no payment on this page. To join the waitlist, email <a href="mailto:alphamaxstudios@gmail.com?subject=Game%20Bot%20waitlist&body=Hi%2C%20please%20notify%20me%20when%20Game%20Bot%20Early%20Access%20is%20available.%0A%0AMy%20GPU%20(optional)%3A%20">alphamaxstudios@gmail.com</a> with the subject “Game Bot waitlist.”</p>
+        <p class="note when-soon waitlist-legal">No checkout and no payment on this page. Use the form above to join the waitlist.</p>
         <p class="note when-live" hidden>Questions or download help: <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a></p>
       </div>
     </div>
@@ -203,11 +225,24 @@
       <details><summary>Does it publish to Steam for me?</summary><p>It prepares store copy and checklists. Steam tax forms, App ID purchases and release clicks always stay with you.</p></details>
       <details><summary>What GPU do I need?</summary><p>NVIDIA RTX 20 series or newer, or AMD RX 6000 series or newer, with at least 8 GB VRAM; 12 GB recommended. Game Bot automatically picks the AI model for your card. CPU-only is much slower and is not recommended.</p></details>
       <details><summary>What languages does the app support?</summary><p>The current Game Bot build includes a language/region selector, so the app UI is multi-language. Choose your language and region in the app.</p></details>
-      <details><summary>How can I join the waitlist or pay?</summary><p class="when-soon">Checkout is not open yet. Join the waitlist now — checkout is opening soon. <a href="mailto:alphamaxstudios@gmail.com?subject=Game%20Bot%20waitlist&body=Hi%2C%20please%20notify%20me%20when%20Game%20Bot%20Early%20Access%20is%20available.%0A%0AMy%20GPU%20(optional)%3A%20">Email alphamaxstudios@gmail.com</a> with the subject “Game Bot waitlist,” and we will email you when you can buy. After you buy, you will get a license key and download instructions by email. Buyer accounts are not open yet. One purchase is one PC. Early Access is tester software, and all sales are final &mdash; no refunds. See the <a href="eula.html">EULA</a>.</p><p class="when-live" hidden>When checkout is open, you can buy from this page. After you buy, you will get a license key and download instructions by email. Questions: <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a>.</p></details>
+      <details><summary>How can I join the waitlist or pay?</summary><div class="when-soon"><p>Checkout is not open yet. Join the waitlist now — checkout is opening soon. Enter your email and we'll notify you when you can buy. After you buy, you will get a license key and download instructions by email. Buyer accounts are not open yet. One purchase is one PC. Early Access is tester software, and all sales are final &mdash; no refunds. See the <a href="eula.html">EULA</a>.</p>
+        <form class="waitlist-form when-soon" action="https://formsubmit.co/ajax/alphamaxstudios@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Game Bot waitlist signup">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" class="waitlist-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="waitlist-row">
+            <label class="visually-hidden" for="waitlist-email-faq">Email</label>
+            <input type="email" name="email" id="waitlist-email-faq" required placeholder="you@email.com" autocomplete="email">
+            <button type="submit" class="btn btn-primary">Notify me at launch</button>
+          </div>
+          <p class="waitlist-msg" role="status" hidden></p>
+          <p class="note waitlist-privacy">We'll only email you about the launch.</p>
+        </form>
+      </div><p class="when-live" hidden>When checkout is open, you can buy from this page. After you buy, you will get a license key and download instructions by email. Questions: <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a>.</p></details>
       <details><summary>Is my work private?</summary><p>Yes. Game Bot runs on your PC, and your chats and projects stay there unless you choose to send them. Update checks only ask this website for version information. A license check, if used, sends only the license key, a hashed machine ID, and the app version. Bug reports go out only when you press send. See the <a href="privacy.html">Privacy Policy</a>.</p></details>
       <details><summary>Refunds and licensing?</summary><p>All sales are final &mdash; no refunds. Game Bot is a digital good. The license is personal and non-transferable, except an approved license transfer. One purchase is for one PC. After you buy, you will get a license key and download instructions by email. Game Bot binds to the computer it is installed on. Moving to a new PC needs a new purchase or an approved license transfer. You may not copy, resell, or redistribute the software, playbooks, or Alphamax designs. Games you create with Game Bot are yours. If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may immediately revoke the license key and disable download access. You must not keep using the product after it is revoked. Software is provided as-is.</p></details>
       <details><summary>Is Game Bot a good gift for kids?</summary><p>Yes. It can be a Christmas or holiday gift for young game makers. It is recommended for ages 13 and up, or 10 and up with a parent. The parent or legal guardian buys and owns the license, and is responsible for the child’s use. Everything stays on the family PC: there are no accounts for kids, and chat data is not sent anywhere. Please check the PC first — Game Bot needs an NVIDIA RTX 20 series or newer, or AMD RX 6000 series or newer, with at least 8 GB VRAM; 12 GB recommended. See <a href="#gift">A great gift for young game makers</a> and the <a href="eula.html">EULA</a>.</p></details>
-      <details><summary>Will the price stay $99?</summary><p>$99 is the launch price. The full release price is TBD and will be higher. Join the waitlist to lock in the $99 launch price.</p></details>
+      <details><summary>Will the price stay $99?</summary><p>$99 is the launch price. The full release price is TBD and will be higher. Join the waitlist above to lock in the $99 launch price.</p></details>
       <details><summary>Do I need Unity?</summary><p>Only if you want the project opened and built in Unity. With Unreal Editor installed, Game Bot can create the Unreal project and package a playable Windows build the same way. Design, docs, Blender assets and prep steps work without either engine.</p></details>
     </div>
   </section>
@@ -240,6 +275,63 @@
       el.rel = "noopener noreferrer";
     });
   }
+  document.querySelectorAll("form.waitlist-form").forEach(function (form) {
+    form.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      var honey = form.querySelector('input[name="_honey"]');
+      if (honey && honey.value) return;
+      var email = form.querySelector('input[name="email"]');
+      var msg = form.querySelector(".waitlist-msg");
+      var btn = form.querySelector('button[type="submit"]');
+      if (!email || !email.value || !email.checkValidity()) {
+        if (email) email.reportValidity();
+        return;
+      }
+      if (btn) btn.disabled = true;
+      if (msg) {
+        msg.hidden = false;
+        msg.className = "waitlist-msg";
+        msg.textContent = "Sending…";
+      }
+      fetch("https://formsubmit.co/ajax/alphamaxstudios@gmail.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          email: email.value,
+          _replyto: email.value,
+          _subject: "Game Bot waitlist signup",
+          _captcha: "false",
+          _honey: "",
+          source: "gamebotstudio.com waitlist"
+        })
+      }).then(function (res) { return res.json().then(function (data) { return { ok: res.ok, data: data }; }); })
+        .then(function (result) {
+          var data = result.data || {};
+          var ok = result.ok || data.success === true || data.success === "true";
+          if (msg) {
+            msg.hidden = false;
+            if (ok) {
+              msg.className = "waitlist-msg waitlist-success";
+              msg.textContent = "You're on the list!";
+              email.disabled = true;
+            } else {
+              if (btn) btn.disabled = false;
+              msg.className = "waitlist-msg waitlist-error";
+              msg.textContent = "Couldn't submit. Try again.";
+            }
+          }
+        })
+        .catch(function () {
+          if (btn) btn.disabled = false;
+          if (msg) {
+            msg.hidden = false;
+            msg.className = "waitlist-msg waitlist-error";
+            msg.textContent = "Couldn't submit. Try again.";
+          }
+        });
+    });
+  });
+
   var params = new URLSearchParams(window.location.search);
   if (params.get("paid") !== "1") return;
   var note = document.getElementById("paid-note");

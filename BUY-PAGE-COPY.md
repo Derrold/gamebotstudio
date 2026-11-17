@@ -18,7 +18,7 @@ Game Bot runs the real studio steps for you, and its tools do the work instead o
 - **Steam prep:** store-page copy and a launch checklist
 
 **Local and unlimited.** Runs on local LLMs through Ollama. No cloud quotas, no per-message fees, and local AI stays on your machine. Internet is still needed to install Ollama and download models, and later for asset downloads, web research, and other online steps.
-**Auto GPU pick.** Detects your card and automatically picks the right AI model. NVIDIA RTX 20 series or newer, or AMD RX 6000 series or newer (Vulkan), with at least 8 GB of video memory. 12 GB or more is recommended. AMD RX 5000 cards may be unstable.
+**Auto GPU pick.** Detects your card and automatically picks the right AI model. NVIDIA RTX 20 series or newer, or AMD RX 6000 series or newer, with at least 8 GB VRAM; 12 GB recommended.
 **You stay in charge.** Steam tax forms, App ID purchases, release clicks and final legal sign-off always stay with you.
 **Language.** The current build includes a language/region selector, so the app UI is multi-language.
 
@@ -26,14 +26,14 @@ Game Bot runs the real studio steps for you, and its tools do the work instead o
 
 ### Requirements
 - Windows 10/11 64-bit
-- NVIDIA RTX 20 series or newer, or AMD RX 6000 series or newer (Vulkan), with at least 8 GB of video memory. 12 GB or more is recommended. AMD RX 5000 cards may be unstable.
-- One purchase = one PC. The license is personal and non-transferable, except an approved license transfer. The buyer may not copy, resell, or redistribute the software, playbooks, or Alphamax designs. Games the buyer creates with Game Bot are theirs. After a successful payment, the buyer creates or signs in to an account on gamebotstudio.com to download the installer and see their license key. Buyer accounts are not open yet. All sales final, no refunds (digital goods). If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may immediately revoke the license key and disable download access. The buyer must not keep using the product after it is revoked.
+- NVIDIA RTX 20 series or newer, or AMD RX 6000 series or newer, with at least 8 GB VRAM; 12 GB recommended.
+- One purchase = one PC. The license is personal and non-transferable, except an approved license transfer. The buyer may not copy, resell, or redistribute the software, playbooks, or Alphamax designs. Games the buyer creates with Game Bot are theirs. After the buyer buys, they will get a license key and download instructions by email. Buyer accounts are not open yet. All sales final, no refunds (digital goods). If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may immediately revoke the license key and disable download access. The buyer must not keep using the product after it is revoked.
 - Ollama + local models (install and first model download need internet; local AI then runs on the PC, with no cloud LLM subscription)
 - Internet again for optional online work: downloading assets, web research, and anything else that pulls from the network
-- Unity or Unreal (optional, for opening and building the project); Blender for one-of-a-kind assets
+- Unity or Unreal (optional, for opening and building the project). With Unreal Editor installed, Game Bot can create the Unreal project and package a playable Windows build. Blender for one-of-a-kind assets.
 
 ### Price (public — checkout coming soon)
-$99 one-time launch price. Increases to $149 once established. Coming soon. Email alphamaxstudios@gmail.com to get notified.
+$99 one-time launch price. The full release price is TBD and will be higher. Coming soon. Email alphamaxstudios@gmail.com to join the waitlist and lock in the $99 launch price.
 
 ### Checkout links (do not publish until BUY_LIVE is true)
 Leave `var BUY_LIVE = false` in `index.html` until launch. Then set it to `true`.

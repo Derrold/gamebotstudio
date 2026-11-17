@@ -1,9 +1,9 @@
 {
-  "version": "0.0.11",
-  "url": "GameBot-0.0.11.zip",
-  "sha256": "5b50e4e89bff7a4e7f153980da347d466e33fde8baf282704d386c2a8a6f168b",
-  "size": 1920487,
-  "released": "2026-11-16",
-  "notes": "Game Bot V0.11: Hang reports still save if GPU/VRAM details can't be read, and you still preview before Send (nothing is sent silently). Free starter packs were checked against public Unity Asset Store pages for Unity 6 / URP: Built-in-only city and zombie packs were replaced with free URP alternatives, and Football Essentials 3D is flagged Built-in-only (no suitable free 3D URP football pack was listed). Titles like \"Open World Plus\" are accepted, and saying \"Unity\" after a game is already built no longer starts a new game.",
-  "signature": "YnybgnDr9SOrg8K7k0Yw50hIIglZQKgTwcnNYmHCGTi3ITM+UtKzCDkLrI4uvBLRTstcwcp+X8yLt8E7ly4vDw=="
+  "version": "0.0.12",
+  "url": "GameBot-0.0.12.zip",
+  "sha256": "c4a71ae77e2e8cfbe231644fb8b34210a1a112fce43954086ebe45f42b17bdbd",
+  "size": 1923933,
+  "released": "2026-11-17",
+  "notes": "Game Bot V0.12 (staged, not published): Built-in pack materials (including foliage like pine bushes) auto-convert to URP Lit or Simple Lit, keeping albedo and alpha cutoff so leaves do not render white. Vague or misspelled game-chat requests (scarier, too quiet, more trees with less lag, can't see, bigger map, enemies too hard, and similar) get a concrete, game-aware proposal instead of a canned pillars list.",
+  "signature": "f2x5fF0uD2g0SEpEMl07sMoNUsCFAaPPaEfpjIBJQL6fSUMVwiTwOZeVoq2W4xXf+8J/ax2zP6i9wqFgeX1dDA=="
 }

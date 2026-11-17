@@ -1,9 +1,9 @@
 {
-  "version": "0.0.10",
-  "url": "GameBot-0.0.10.zip",
-  "sha256": "bf843023f908936da2fa540029c3749b96f7c0154722a0e22b74b5ce895e5f23",
-  "size": 1917658,
-  "released": "2026-11-14",
-  "notes": "Game Bot V0.10: Chat understands typos and slightly-off wording — confident matches are applied silently, and if it's unsure it asks 'Did you mean X? (yes runs it)'. 'Add more enemies' / 'more enemies' now increases the enemy count in games that already have enemies (for example a sci-fi FPS) and asks before rebuilding, instead of looking for an empty folder or offering packs. Packs are offered only when the game has no enemy system.",
-  "signature": "b3Jvcw6lIITh8Yw0sn6sBadN96xjf2l3kQertbHLlIeBJAbEMCZpSLMN49IHGKGj6LV8LktfiMMnGNmrh3DZDg=="
+  "version": "0.0.11",
+  "url": "GameBot-0.0.11.zip",
+  "sha256": "5b50e4e89bff7a4e7f153980da347d466e33fde8baf282704d386c2a8a6f168b",
+  "size": 1920487,
+  "released": "2026-11-16",
+  "notes": "Game Bot V0.11: Hang reports still save if GPU/VRAM details can't be read, and you still preview before Send (nothing is sent silently). Free starter packs were checked against public Unity Asset Store pages for Unity 6 / URP: Built-in-only city and zombie packs were replaced with free URP alternatives, and Football Essentials 3D is flagged Built-in-only (no suitable free 3D URP football pack was listed). Titles like \"Open World Plus\" are accepted, and saying \"Unity\" after a game is already built no longer starts a new game.",
+  "signature": "YnybgnDr9SOrg8K7k0Yw50hIIglZQKgTwcnNYmHCGTi3ITM+UtKzCDkLrI4uvBLRTstcwcp+X8yLt8E7ly4vDw=="
 }

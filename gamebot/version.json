@@ -1,9 +1,10 @@
 {
-  "version": "0.0.12",
-  "url": "GameBot-0.0.12.zip",
-  "sha256": "c4a71ae77e2e8cfbe231644fb8b34210a1a112fce43954086ebe45f42b17bdbd",
-  "size": 1923933,
-  "released": "2026-11-17",
-  "notes": "Game Bot V0.12 (staged, not published): Built-in pack materials (including foliage like pine bushes) auto-convert to URP Lit or Simple Lit, keeping albedo and alpha cutoff so leaves do not render white. Vague or misspelled game-chat requests (scarier, too quiet, more trees with less lag, can't see, bigger map, enemies too hard, and similar) get a concrete, game-aware proposal instead of a canned pillars list.",
-  "signature": "f2x5fF0uD2g0SEpEMl07sMoNUsCFAaPPaEfpjIBJQL6fSUMVwiTwOZeVoq2W4xXf+8J/ax2zP6i9wqFgeX1dDA=="
+  "version": "0.0.14",
+  "display": "V0.14",
+  "url": "GameBot-0.0.14.zip",
+  "sha256": "73ea7103b997dd4b27e98af25bc17093a0c0ea09f19c2bb3ffbc3f47b1aabae5",
+  "size": 2888759,
+  "released": "2026-11-21",
+  "notes": "Game Bot V0.14: Follow-up chat edits write the brief and rebuild (darker, boss, faster player, more/fewer enemies, weather, time of day, colors, extra level, undo, rename). Cancel/stop a running hidden Unity/Unreal job; retry a failed build; continue-with-placeholders starts a build that had not started. Typo correction uses a common-English dictionary and never rewrites real words (words, loop, art, ready stay put); known misspellings like wnat/plataformer are fixed silently and titles such as Pine Dash and Shadow Gate are kept. Yes after a typo confirm resumes the original request. The model stays loaded during Unity/Unreal builds. If Ollama drops mid-request, Game Bot shows a clear message, retries once, and reloads the model with the edition num_ctx (8192 on 8gb), not the 4096 default. AMD VRAM is read from DXGI DedicatedVideoMemory and registry qwMemorySize, so the context meter basis no longer shows 0 GB VRAM. Instant answers for version/update and for running unelevated. Xbox/PlayStation/Switch questions say honestly that Game Bot builds Windows PC games and does not publish to consoles. Asset-plan placeholder phrases are honored. GameBot.exe FileVersion matches the app version. Bring-your-own model support in Settings (local Ollama, LM Studio/llama.cpp, or optional cloud keys kept DPAPI-encrypted). Bug-report preview is redacted and never auto-sent. GAMEBOT_UPDATE_TEST is a local-feed-only update path (never the live website).",
+  "signature": "zwrx2XN4N/KZ+nhrAEH47qxg1xaz/HYQDdWO/WTC39w5jzXzG87elkIXUlpVrC4uhJDlGA/ICGHeKThudsDnCg=="
 }

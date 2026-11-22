@@ -111,3 +111,12 @@ details .waitlist-form{margin-top:14px}
 /* What can you make? */
 #make{padding-top:36px;padding-bottom:28px}
 #make .card p{color:var(--txt);font-size:1.05rem}
+
+/* See Game Bot in action */
+#watch{padding-top:36px;padding-bottom:40px}
+.videos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.video-card{margin:0}
+.video-frame{position:relative;width:100%;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#05070f;border:1px solid var(--line);box-shadow:0 16px 48px rgba(0,0,0,.45)}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-card figcaption{margin:12px 0 0;color:var(--mut);font-size:.92rem}
+@media (max-width:860px){.videos{grid-template-columns:1fr}}

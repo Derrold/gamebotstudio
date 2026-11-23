@@ -44,7 +44,7 @@
       <li><a href="#faq">FAQ</a></li>
     </ul>
     <div class="nav-buy">
-      <a class="btn btn-primary btn-sm when-soon" href="#waitlist">Notify me at launch</a>
+      <a class="btn btn-primary btn-sm when-soon" href="#waitlist">Join the waitlist</a>
       <a class="btn btn-primary btn-sm when-live" data-checkout="stripe" href="#pricing" hidden>Pay with card</a>
       <a class="btn btn-paypal btn-sm when-live" data-checkout="paypal" href="#pricing" hidden>PayPal</a>
     </div>
@@ -64,7 +64,14 @@
     <div>
       <span class="eyebrow">Windows desktop · Local AI</span>
       <h1>Your local <span class="chrome">automatic game studio</span>.</h1>
-      <p class="lead">Game Bot is a local AI studio assistant that runs the game-dev pipeline for you — from pitch and design to a playable start, then assets, Blender one-of-a-kind pieces, docs, legal, QA and Steam prep. It runs on your own PC with unlimited local LLM use. No cloud usage caps.</p>
+      <p class="lead">Game Bot is a local AI studio assistant that runs the game-dev pipeline for you — from pitch and design to a playable start in Unity or Unreal, then assets, Blender one-of-a-kind pieces, docs, legal, QA and Steam prep. Offline AI built in, or bring your own. It runs on your own PC with unlimited local LLM use. No cloud usage caps.</p>
+      <div class="cta">
+        <a class="btn btn-primary when-soon" href="#waitlist">Join the waitlist</a>
+        <a class="btn btn-primary when-live" data-checkout="stripe" href="#pricing" hidden>Buy — pay with card</a>
+        <a class="btn btn-paypal when-live" data-checkout="paypal" href="#pricing" hidden>Buy with PayPal</a>
+        <a class="btn btn-ghost" href="#pipeline">See how it works</a>
+      </div>
+      <p class="note waitlist-why">Join the waitlist for early access to the beta, a founding-member discount, and first look at new features.</p>
       <form class="waitlist-form when-soon" action="https://formsubmit.co/ajax/alphamaxstudios@gmail.com" method="POST" id="waitlist">
           <input type="hidden" name="_subject" value="Game Bot waitlist signup">
           <input type="hidden" name="_captcha" value="false">
@@ -72,16 +79,11 @@
           <div class="waitlist-row">
             <label class="visually-hidden" for="waitlist-email-hero">Email</label>
             <input type="email" name="email" id="waitlist-email-hero" required placeholder="you@email.com" autocomplete="email">
-            <button type="submit" class="btn btn-primary">Notify me at launch</button>
+            <button type="submit" class="btn btn-primary">Join the waitlist</button>
           </div>
           <p class="waitlist-msg" role="status" hidden></p>
           <p class="note waitlist-privacy">We'll only email you about the launch.</p>
         </form>
-      <div class="cta">
-        <a class="btn btn-primary when-live" data-checkout="stripe" href="#pricing" hidden>Buy — pay with card</a>
-        <a class="btn btn-paypal when-live" data-checkout="paypal" href="#pricing" hidden>Buy with PayPal</a>
-        <a class="btn btn-ghost" href="#pipeline">See how it works</a>
-      </div>
       <div class="pills">
         <span class="pill">Local LLM on your PC</span>
         <span class="pill">Auto GPU pick</span>

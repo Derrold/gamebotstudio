@@ -1,10 +1,10 @@
 {
-  "version": "0.0.17",
-  "display": "V0.17",
-  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.17.zip",
-  "sha256": "a152d42db5cec1f943f32d83e74a5eafc30ba19886e3dc6666cf96b1d1ff87f6",
-  "size": 2901222,
+  "version": "0.0.18",
+  "display": "V0.18",
+  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.18.zip",
+  "sha256": "365308921c564d1fd7044e46298625baf6f3e0cbfa3e320b08222934cca20d69",
+  "size": 2901223,
   "released": "2026-11-23",
-  "notes": "GameDevelopmentBot V0.17: Game Bot is now GameDevelopmentBot (by AlphaMax Studios). New name in the app, Setup, Start menu and manual; updates and links now use gamedevelopmentbot.com. Your chats, settings, license and games are kept. Includes everything in V0.16.",
-  "signature": "etN7GvxhxMGQ57F4S3RCAeqtO1TFQFt/dZwUE6N3lPDhoGorHKYx/E0nLAMqxOxp5p5ZLlgdM8jihVBLJl4DAA=="
+  "notes": "GameDevelopmentBot V0.18: Setup's welcome artwork now shows the GameDevelopmentBot name. Includes everything in V0.17 (rename to GameDevelopmentBot, gamedevelopmentbot.com links).",
+  "signature": "KKytT/4CoT8SXK4eswZn6LumeuIEIVpt2ScRfQwAvzMbS7XA+EZNWUiVNxnibIEVNsVxhOoDFk4JE0So3QNzAQ=="
 }

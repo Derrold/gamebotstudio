@@ -38,7 +38,6 @@ $99 one-time launch price. The full release price is TBD and will be higher. Com
 ### Checkout links (do not publish until BUY_LIVE is true)
 Leave `var BUY_LIVE = false` in `index.html` until launch. Then set it to `true`.
 - Card (Stripe): https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00
-- PayPal: https://www.paypal.com/ncp/payment/UY5FY7UCJPDYG
 
 ## Tags
 game development, AI, local LLM, Ollama, Unity, game design, indie dev, tools, Windows

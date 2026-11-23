@@ -14,8 +14,6 @@ header.nav{position:sticky;top:0;z-index:10;background:rgba(7,13,28,.8);backdrop
 .btn:hover{text-decoration:none;transform:translateY(-1px)}
 .btn-primary{background:linear-gradient(135deg,var(--blue),#1d4ed8);color:#fff;box-shadow:0 8px 24px rgba(59,130,246,.35)}
 .btn-ghost{border-color:var(--line);color:var(--txt);background:rgba(255,255,255,.03)}
-.btn-paypal{background:rgba(255,196,57,.12);color:#ffc439;border-color:rgba(255,196,57,.55)}
-.btn-paypal:hover{background:rgba(255,196,57,.22)}
 .btn-sm{padding:8px 14px;font-size:.9rem}
 body:not(.buy-live) .when-live{display:none !important}
 body.buy-live .when-soon{display:none !important}
@@ -63,6 +61,7 @@ ul.check.human li::before{background:var(--red)}
 .paid-note[hidden]{display:none}
 .paid-note strong{color:#bbf7d0;font-size:1.05rem}
 .paid-note p{margin:6px 0 0;color:var(--txt)}
+.paid-note code{font-size:1.1rem;padding:2px 8px;border-radius:6px;background:rgba(255,255,255,.08);user-select:all}
 details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
 summary{cursor:pointer;font-weight:700}details p{color:var(--mut);margin:10px 0 0}
 footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mut);font-size:.9rem;text-align:center}

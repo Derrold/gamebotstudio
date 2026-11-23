@@ -46,17 +46,20 @@
     <div class="nav-buy">
       <a class="btn btn-primary btn-sm when-soon" href="#waitlist">Join the waitlist</a>
       <a class="btn btn-primary btn-sm when-live" data-checkout="stripe" href="#pricing" hidden>Pay with card</a>
-      <a class="btn btn-paypal btn-sm when-live" data-checkout="paypal" href="#pricing" hidden>PayPal</a>
     </div>
   </div>
 </header>
 
 <main id="top">
-  <!-- Buyer portal is not in this site. When fulfillment ships /account, link the account lines there. -->
   <div id="paid-note" class="paid-note" role="status" hidden>
     <div class="wrap">
       <strong>Thank you — payment received.</strong>
-      <p>You will get a license key and download instructions by email. One purchase covers one PC. The license is personal and non-transferable, except an approved license transfer. You may not copy, resell, or redistribute the software, playbooks, or Alphamax designs. Games you create with Game Bot are yours. All sales are final &mdash; no refunds on this digital good. If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may immediately revoke the license key and disable download access. You must not keep using the product after it is revoked.</p>
+      <div id="paid-claim" class="paid-claim"><p id="paid-status">Getting your license key&hellip;</p>
+        <p id="paid-key-row" hidden>Your license key: <code id="paid-key"></code></p>
+        <p id="paid-dl-row" hidden><a id="paid-dl" class="btn btn-primary" href="#">Download Game Bot Setup</a></p>
+        <p id="paid-save" hidden><strong>Save your key and this download link now.</strong> Enter the key in Setup or when Game Bot first starts; it activates on this PC (internet needed once). The download link keeps working while your license is active.</p>
+      </div>
+      <p>One purchase covers one PC. The license is personal and non-transferable, except an approved license transfer. You may not copy, resell, or redistribute the software, playbooks, or Alphamax designs. Games you create with Game Bot are yours. All sales are final &mdash; no refunds on this digital good. If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may immediately revoke the license key and disable download access. You must not keep using the product after it is revoked.</p>
       <p>Questions: <a href="mailto:alphamaxstudios@gmail.com?subject=Game%20Bot%20license%20and%20download">alphamaxstudios@gmail.com</a>.</p>
     </div>
   </div>
@@ -68,7 +71,6 @@
       <div class="cta">
         <a class="btn btn-primary when-soon" href="#waitlist">Join the waitlist</a>
         <a class="btn btn-primary when-live" data-checkout="stripe" href="#pricing" hidden>Buy — pay with card</a>
-        <a class="btn btn-paypal when-live" data-checkout="paypal" href="#pricing" hidden>Buy with PayPal</a>
         <a class="btn btn-ghost" href="#pipeline">See how it works</a>
       </div>
       <p class="note waitlist-why">Join the waitlist for early access to the beta, a founding-member discount, and first look at new features.</p>
@@ -252,10 +254,9 @@
         </form>
         <div class="cta" style="justify-content:center">
           <a class="btn btn-primary when-live" data-checkout="stripe" href="#pricing" hidden>Buy — pay with card</a>
-          <a class="btn btn-paypal when-live" data-checkout="paypal" href="#pricing" hidden>Buy with PayPal</a>
         </div>
         <p class="pay-methods when-soon"><strong>Coming soon.</strong> Checkout is not open. Enter your email and we'll notify you when Early Access is available.</p>
-        <p class="pay-methods when-live" hidden><strong>Card (Stripe)</strong> or <strong>PayPal</strong>. Same $99 price.</p>
+        <p class="pay-methods when-live" hidden>Secure card checkout by <strong>Stripe</strong>. Your license key and download link appear on this page right after you pay.</p>
         <p class="note legal">Early Access is unfinished tester software: features may change or break. The license is personal and non-transferable, except an approved license transfer. One purchase is one PC. You may not copy, resell, or redistribute the software, playbooks, or Alphamax designs. Games you create with Game Bot are yours. If a payment is disputed, charged back, reversed, or fails to clear, AlphaMax Studios / Game Bot may immediately revoke the license key and disable download access. You must not keep using the product after it is revoked. See the <a href="eula.html">EULA</a> and <a href="privacy.html">Privacy Policy</a>.</p>
         <p class="note when-soon waitlist-legal">No checkout and no payment on this page. Use the form above to join the waitlist.</p>
         <p class="note when-live" hidden>Questions or download help: <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a></p>
@@ -275,7 +276,7 @@
       <details><summary>Does it publish to Steam for me?</summary><p>It prepares store copy and checklists. Steam tax forms, App ID purchases and release clicks always stay with you.</p></details>
       <details><summary>What GPU do I need?</summary><p>NVIDIA RTX 20 series or newer, or AMD RX 6000 series or newer, with at least 8 GB VRAM; 12 GB recommended. Game Bot automatically picks the AI model for your card. On supported AMD cards it uses Vulkan when needed, sizes context for 8 GB VRAM, and retries at a lower context if the driver resets instead of hanging. CPU-only is much slower and is not recommended.</p></details>
       <details><summary>What languages does the app support?</summary><p>The current Game Bot build includes a language/region selector, so the app UI is multi-language. Choose your language and region in the app.</p></details>
-      <details><summary>How can I join the waitlist or pay?</summary><div class="when-soon"><p>Checkout is not open yet. Join the waitlist now — checkout is opening soon. Enter your email and we'll notify you when you can buy. After you buy, you will get a license key and download instructions by email. Buyer accounts are not open yet. One purchase is one PC. Early Access is tester software, and all sales are final &mdash; no refunds. See the <a href="eula.html">EULA</a>.</p>
+      <details><summary>How can I join the waitlist or pay?</summary><div class="when-soon"><p>Checkout is not open yet. Join the waitlist now — checkout is opening soon. Enter your email and we'll notify you when you can buy. After you buy, your license key and download link appear on the page right after checkout. One purchase is one PC. Early Access is tester software, and all sales are final &mdash; no refunds. See the <a href="eula.html">EULA</a>.</p>
         <form class="waitlist-form when-soon" action="https://formsubmit.co/ajax/alphamaxstudios@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="Game Bot waitlist signup">
           <input type="hidden" name="_captcha" value="false">
@@ -288,9 +289,9 @@
           <p class="waitlist-msg" role="status" hidden></p>
           <p class="note waitlist-privacy">We'll only email you about the launch.</p>
         </form>
-      </div><p class="when-live" hidden>When checkout is open, you can buy from this page. After you buy, you will get a license key and download instructions by email. Questions: <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a>.</p></details>
+      </div><p class="when-live" hidden>When checkout is open, you can buy from this page. After you buy, your license key and download link appear on the page right after checkout. Questions: <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a>.</p></details>
       <details><summary>Is my work private?</summary><p>Yes, with the default local model. Game Bot runs on your PC, and your chats and projects stay there unless you choose to send them. If you pick a cloud model in Settings, those prompts leave the PC. API keys stay on the PC, encrypted, and are not included in bug reports. Update checks only ask this website for version information. A license check, if used, sends only the license key, a hashed machine ID, and the app version. Bug reports go out only when you press send. See the <a href="privacy.html">Privacy Policy</a>.</p></details>
-      <details><summary>Refunds and licensing?</summary><p>All sales are final &mdash; no refunds. Game Bot is a digital good. The license is personal and non-transferable, except an approved license transfer. One purchase is for one PC. After you buy, you will get a license key and download instructions by email. Game Bot binds to the computer it is installed on. Moving to a new PC needs a new purchase or an approved license transfer. You may not copy, resell, or redistribute the software, playbooks, or Alphamax designs. Games you create with Game Bot are yours. If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may immediately revoke the license key and disable download access. You must not keep using the product after it is revoked. Software is provided as-is.</p></details>
+      <details><summary>Refunds and licensing?</summary><p>All sales are final &mdash; no refunds. Game Bot is a digital good. The license is personal and non-transferable, except an approved license transfer. One purchase is for one PC. After you buy, your license key and download link appear on the page right after checkout. Game Bot binds to the computer it is installed on. Moving to a new PC needs a new purchase or an approved license transfer. You may not copy, resell, or redistribute the software, playbooks, or Alphamax designs. Games you create with Game Bot are yours. If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / Game Bot may immediately revoke the license key and disable download access. You must not keep using the product after it is revoked. Software is provided as-is.</p></details>
       <details><summary>Is Game Bot a good gift for kids?</summary><p>Yes. It can be a Christmas or holiday gift for young game makers. It is recommended for ages 13 and up, or 10 and up with a parent. The parent or legal guardian buys and owns the license, and is responsible for the child’s use. Everything stays on the family PC when you use the default local model: there are no accounts for kids, and chat data is not sent anywhere. If someone chooses a cloud model in Settings, those prompts leave the PC. Please check the PC first — Game Bot needs an NVIDIA RTX 20 series or newer, or AMD RX 6000 series or newer, with at least 8 GB VRAM; 12 GB recommended. See <a href="#gift">A great gift for young game makers</a> and the <a href="eula.html">EULA</a>.</p></details>
       <details><summary>Will the price stay $99?</summary><p>$99 is the launch price. The full release price is TBD and will be higher. Join the waitlist above to lock in the $99 launch price.</p></details>
       <details><summary>Do I need Unity?</summary><p>Only if you want the project opened and built in Unity. With Unreal Editor installed, Game Bot can create the Unreal project and package a playable Windows build the same way. Design, docs, Blender assets and prep steps work without either engine.</p></details>
@@ -315,11 +316,11 @@
 <script>
 (function () {
   // BUY_LIVE=false keeps public checkout on Coming soon.
-  // One-line flip: set BUY_LIVE to true to show Stripe and PayPal buttons.
+  // One-line flip: set BUY_LIVE to true to show the Stripe card checkout buttons.
   var BUY_LIVE = false;
+  var LICENSE_API = "https://gamebot-licenses.alphamaxstudios.workers.dev";
   var CHECKOUT = {
-    stripe: "https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00",
-    paypal: "https://www.paypal.com/ncp/payment/UY5FY7UCJPDYG"
+    stripe: "https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00"
   };
   if (BUY_LIVE) {
     document.body.classList.add("buy-live");
@@ -395,6 +396,35 @@
   var note = document.getElementById("paid-note");
   if (!note) return;
   note.hidden = false;
+  var sid = params.get("session_id") || "";
+  var st = document.getElementById("paid-status");
+  if (!/^cs_(live|test)_[A-Za-z0-9]+$/.test(sid)) {
+    st.textContent = "We couldn't read your order number. Email alphamaxstudios@gmail.com with your Stripe receipt and we'll send your key.";
+    return;
+  }
+  var tries = 0;
+  function claim() {
+    fetch(LICENSE_API + "/v1/claim?session_id=" + encodeURIComponent(sid), { cache: "no-store" })
+      .then(function (r) { return r.json().then(function (j) { return { code: r.status, j: j }; }); })
+      .then(function (res) {
+        if (res.j && res.j.status === "active") {
+          document.getElementById("paid-key").textContent = res.j.key;
+          document.getElementById("paid-dl").href = res.j.download_url;
+          st.textContent = "Your Game Bot Early Access license is ready.";
+          ["paid-key-row", "paid-dl-row", "paid-save"].forEach(function (id) { document.getElementById(id).hidden = false; });
+        } else if (res.code === 202 && tries++ < 20) {
+          st.textContent = "Payment received. Getting your license key\u2026";
+          setTimeout(claim, 3000);
+        } else {
+          st.textContent = "Your key is taking longer than expected. Email alphamaxstudios@gmail.com with your Stripe receipt and we'll send it right away.";
+        }
+      })
+      .catch(function () {
+        if (tries++ < 20) { setTimeout(claim, 3000); return; }
+        st.textContent = "Couldn't reach the license server. Email alphamaxstudios@gmail.com with your Stripe receipt.";
+      });
+  }
+  claim();
 })();
 </script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dd1d087549eb4d16b326d7f46ad0f1a5"}'></script><!-- End Cloudflare Web Analytics -->

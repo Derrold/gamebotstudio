@@ -1,10 +1,10 @@
 {
-  "version": "0.0.14",
-  "display": "V0.14",
-  "url": "GameBot-0.0.14.zip",
-  "sha256": "73ea7103b997dd4b27e98af25bc17093a0c0ea09f19c2bb3ffbc3f47b1aabae5",
-  "size": 2888759,
-  "released": "2026-11-21",
-  "notes": "Game Bot V0.14: Follow-up chat edits write the brief and rebuild (darker, boss, faster player, more/fewer enemies, weather, time of day, colors, extra level, undo, rename). Cancel/stop a running hidden Unity/Unreal job; retry a failed build; continue-with-placeholders starts a build that had not started. Typo correction uses a common-English dictionary and never rewrites real words (words, loop, art, ready stay put); known misspellings like wnat/plataformer are fixed silently and titles such as Pine Dash and Shadow Gate are kept. Yes after a typo confirm resumes the original request. The model stays loaded during Unity/Unreal builds. If Ollama drops mid-request, Game Bot shows a clear message, retries once, and reloads the model with the edition num_ctx (8192 on 8gb), not the 4096 default. AMD VRAM is read from DXGI DedicatedVideoMemory and registry qwMemorySize, so the context meter basis no longer shows 0 GB VRAM. Instant answers for version/update and for running unelevated. Xbox/PlayStation/Switch questions say honestly that Game Bot builds Windows PC games and does not publish to consoles. Asset-plan placeholder phrases are honored. GameBot.exe FileVersion matches the app version. Bring-your-own model support in Settings (local Ollama, LM Studio/llama.cpp, or optional cloud keys kept DPAPI-encrypted). Bug-report preview is redacted and never auto-sent. GAMEBOT_UPDATE_TEST is a local-feed-only update path (never the live website).",
-  "signature": "zwrx2XN4N/KZ+nhrAEH47qxg1xaz/HYQDdWO/WTC39w5jzXzG87elkIXUlpVrC4uhJDlGA/ICGHeKThudsDnCg=="
+  "version": "0.0.15",
+  "display": "V0.15",
+  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.15.zip",
+  "sha256": "7d2a4e06886a7d3231c648ba85b401d69b3f9c23237328d4b632937a3bda0058",
+  "size": 2899053,
+  "released": "2026-11-23",
+  "notes": "Game Bot V0.15: Game Bot now needs your license key. Enter the key from your purchase in Setup or when Game Bot starts; it activates on this PC once (internet needed), then keeps working offline for up to 14 days between checks. One purchase = one PC. Updates download only for an activated key. Includes everything in V0.14.",
+  "signature": "EfL+DJjTW0p7KgpzUA65FzHAIP6LKUj/MkF4rT0nld4aSgyTprexyiAUJEbfvD/c95XWfqnjn7WUIY0St2tcDw=="
 }

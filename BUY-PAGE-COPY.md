@@ -33,7 +33,7 @@ Game Bot runs the real studio steps for you, and its tools do the work instead o
 - Unity or Unreal (optional, for opening and building the project). With Unreal Editor installed, Game Bot can create the Unreal project and package a playable Windows build. Blender for one-of-a-kind assets.
 
 ### Price (public — checkout coming soon)
-$99 one-time launch price. The full release price is TBD and will be higher. Coming soon. Join the waitlist on gamebotstudio.com (email field + “Notify me at launch”) to lock in the $99 launch price. We’ll only email you about the launch.
+$99 one-time launch price. The full release price is TBD and will be higher. Buy with Stripe on gamebotstudio.com (Pricing section) to lock in the $99 launch price.
 
 ### Checkout links (do not publish until BUY_LIVE is true)
 Leave `var BUY_LIVE = false` in `index.html` until launch. Then set it to `true`.

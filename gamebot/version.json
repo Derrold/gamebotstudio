@@ -1,10 +1,10 @@
 {
-  "version": "0.0.15",
-  "display": "V0.15",
-  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.15.zip",
-  "sha256": "7d2a4e06886a7d3231c648ba85b401d69b3f9c23237328d4b632937a3bda0058",
-  "size": 2899053,
+  "version": "0.0.16",
+  "display": "V0.16",
+  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.16.zip",
+  "sha256": "3576c44deee9036203f6b8f032cc3385d2dfd0f5e797276de890814f6a1f645a",
+  "size": 2900366,
   "released": "2026-11-23",
-  "notes": "Game Bot V0.15: Game Bot now needs your license key. Enter the key from your purchase in Setup or when Game Bot starts; it activates on this PC once (internet needed), then keeps working offline for up to 14 days between checks. One purchase = one PC. Updates download only for an activated key. Includes everything in V0.14.",
-  "signature": "EfL+DJjTW0p7KgpzUA65FzHAIP6LKUj/MkF4rT0nld4aSgyTprexyiAUJEbfvD/c95XWfqnjn7WUIY0St2tcDw=="
+  "notes": "Game Bot V0.16: the built-in AI model now downloads with your license key. Setup downloads it for you, or use Start menu > Game Bot > Set up AI model (resumable, checksum verified). Includes everything in V0.15.",
+  "signature": "QymdR74ZM2ax5yT7sCd8pG2t4A9jVo7pBxhZv5BQzTllnFfsP11+8Hsc1UaP3HF4AV5nReM257epsb1oDXOSDA=="
 }

@@ -1,10 +1,10 @@
 {
-  "version": "0.0.16",
-  "display": "V0.16",
-  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.16.zip",
-  "sha256": "3576c44deee9036203f6b8f032cc3385d2dfd0f5e797276de890814f6a1f645a",
-  "size": 2900366,
+  "version": "0.0.17",
+  "display": "V0.17",
+  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.17.zip",
+  "sha256": "a152d42db5cec1f943f32d83e74a5eafc30ba19886e3dc6666cf96b1d1ff87f6",
+  "size": 2901222,
   "released": "2026-11-23",
-  "notes": "Game Bot V0.16: the built-in AI model now downloads with your license key. Setup downloads it for you, or use Start menu > Game Bot > Set up AI model (resumable, checksum verified). Includes everything in V0.15.",
-  "signature": "QymdR74ZM2ax5yT7sCd8pG2t4A9jVo7pBxhZv5BQzTllnFfsP11+8Hsc1UaP3HF4AV5nReM257epsb1oDXOSDA=="
+  "notes": "GameDevelopmentBot V0.17: Game Bot is now GameDevelopmentBot (by AlphaMax Studios). New name in the app, Setup, Start menu and manual; updates and links now use gamedevelopmentbot.com. Your chats, settings, license and games are kept. Includes everything in V0.16.",
+  "signature": "etN7GvxhxMGQ57F4S3RCAeqtO1TFQFt/dZwUE6N3lPDhoGorHKYx/E0nLAMqxOxp5p5ZLlgdM8jihVBLJl4DAA=="
 }

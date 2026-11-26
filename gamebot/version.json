@@ -1,10 +1,13 @@
 {
-  "version": "0.0.19",
-  "display": "V0.19",
-  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.19.zip",
-  "sha256": "ea41d2723d1a77be2691d83fc72d6a8ca8834bcf969aab825a15a9c0a6a7bee1",
-  "size": 2901682,
-  "released": "2026-11-23",
-  "notes": "GameDevelopmentBot V0.19: the AI now introduces itself as GameDevelopmentBot. Includes everything in V0.18 (GameDevelopmentBot welcome artwork and name).",
-  "signature": "Bh/1AK+S8CNIWDzSQwLow/DjquVgolR3irLnnD6Xtt2jfvvuUxposOQ8a89E4jrvOu5jmYN2K2eZR2ncnqDgCw=="
+  "version": "0.0.20",
+  "display": "V0.20",
+  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.20.zip",
+  "sha256": "1004a7d7355f5984ff203aaaedc120ed1596731a5f3c04e8191acfe2e519c70b",
+  "size": 2909232,
+  "released": "2026-11-26",
+  "notes": "GameDevelopmentBot V0.20: adds the 2-hour free trial (try before you buy; buying unlocks the same install). Includes everything in V0.19.",
+  "setup_url": "https://gamebot-licenses.alphamaxstudios.workers.dev/dl/",
+  "setup_sha256": "59ca49d06e8e069fa95fbe7dc9535ce83f3ac095c018951bfdbb4a12da0647b4",
+  "setup_size": 4759506,
+  "signature": "xJr3GmCL0jRP2+5cQrSmdf9lErbolpaTPr+qsVk/vxkBNNnXDumwS8iA+psqTZI2Ov/oEr2rM9g1SuwPm+fiCQ=="
 }

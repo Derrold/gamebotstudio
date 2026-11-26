@@ -49,6 +49,20 @@
 </header>
 
 <main id="top">
+  <div id="trial-note" class="paid-note" role="status" hidden>
+    <div class="wrap">
+      <strong>Your free GameDevelopmentBot trial is ready.</strong>
+      <div class="paid-claim">
+        <p>Your trial key: <code id="trial-key"></code> &nbsp;<button id="trial-copy" class="btn btn-ghost" type="button">Copy</button></p>
+        <p><strong id="trial-min">120</strong> minutes of active building time: the clock only runs while GameDevelopmentBot is generating, building, or you are using it. Idle time doesn&rsquo;t count. No card, nothing is ever charged.</p>
+        <p><a id="trial-dl" class="btn btn-primary" href="#">Download GameDevelopmentBot Setup</a>
+           <a id="trial-model" class="btn btn-ghost" href="#" hidden>Download the built-in AI model (4.7 GB)</a></p>
+        <p>Install, start GameDevelopmentBot and paste the key. <strong>Save this key now</strong> &mdash; we also email it when email is on.</p>
+        <p>Like it? Buying ($99, one-time) unlocks this same install and keeps your game exactly where you left it: <a id="trial-buy" href="https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00" target="_blank" rel="noopener noreferrer">Buy GameDevelopmentBot</a>.</p>
+      </div>
+      <p>Questions: <a href="mailto:alphamaxstudios@gmail.com?subject=GameDevelopmentBot%20free%20trial">alphamaxstudios@gmail.com</a>.</p>
+    </div>
+  </div>
   <div id="paid-note" class="paid-note" role="status" hidden>
     <div class="wrap">
       <strong>Thank you — payment received.</strong>
@@ -229,6 +243,16 @@
         </div>
         <p class="pay-methods">Secure checkout by <strong>Stripe</strong>. Your license key, the GameDevelopmentBot Setup download and the built-in AI model download appear on this page right after you pay.</p>
         <p class="note legal">Early Access is unfinished tester software: features may change or break. The license is personal and non-transferable, except an approved license transfer. One purchase is one PC. You may not copy, resell, or redistribute the software, playbooks, or Alphamax designs. Games you create with GameDevelopmentBot are yours. If a payment is disputed, charged back, reversed, or fails to clear, AlphaMax Studios / GameDevelopmentBot may immediately revoke the license key and disable download access. You must not keep using the product after it is revoked. See the <a href="eula.html">EULA</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+        <div id="trial-box" class="when-trial" hidden style="margin-top:18px">
+          <h3 style="margin:0 0 6px">Try it free &mdash; 2 hours of building</h3>
+          <p class="muted" style="margin:0 0 8px">Just your email. No card. Start a game, play your first build, then decide.</p>
+          <form id="trial-form" class="cta" style="justify-content:center;flex-wrap:wrap;gap:8px" action="#" method="post">
+            <input id="trial-email" name="email" type="email" required placeholder="Your email" autocomplete="email" style="padding:10px 12px;border-radius:8px;border:1px solid #888;min-width:240px">
+            <button class="btn btn-ghost" type="submit">Start free trial</button>
+          </form>
+          <p class="note" id="trial-msg" role="status"></p>
+          <p class="note legal">Free trial: 120 minutes of active use (time counts only while GameDevelopmentBot is generating, building, or in use; idle time doesn&rsquo;t count), within 30 days, on one PC. One game project, Unity only. Trial builds play on your PC and show a &ldquo;TRIAL BUILD&rdquo; watermark; installers, desktop shortcuts, Unreal and Steam/store prep are in the full version. The app checks in online to count your time. When the time is used up, your project stays on your PC &mdash; buy the $99 license to unlock the same install and keep going. No card needed, nothing is charged automatically. One free trial per person and PC.</p>
+        </div>
         <p class="note">Questions or download help: <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a></p>
       </div>
     </div>
@@ -250,6 +274,7 @@
       <details><summary>Is my work private?</summary><p>Yes, with the default local model. GameDevelopmentBot runs on your PC, and your chats and projects stay there unless you choose to send them. If you pick a cloud model in Settings, those prompts leave the PC. API keys stay on the PC, encrypted, and are not included in bug reports. Update checks only ask this website for version information. A license check, if used, sends only the license key, a hashed machine ID, and the app version. Bug reports go out only when you press send. See the <a href="privacy.html">Privacy Policy</a>.</p></details>
       <details><summary>Refunds and licensing?</summary><p>All sales are final &mdash; no refunds. GameDevelopmentBot is a digital good. The license is personal and non-transferable, except an approved license transfer. One purchase is for one PC. After you buy, your license key and download link appear on the page right after checkout. GameDevelopmentBot binds to the computer it is installed on. Moving to a new PC needs a new purchase or an approved license transfer. You may not copy, resell, or redistribute the software, playbooks, or Alphamax designs. Games you create with GameDevelopmentBot are yours. If a payment is disputed, charged back, reversed, or fails to clear, Alphamax Studios / GameDevelopmentBot may immediately revoke the license key and disable download access. You must not keep using the product after it is revoked. Software is provided as-is.</p></details>
       <details><summary>Is GameDevelopmentBot a good gift for kids?</summary><p>Yes. It can be a Christmas or holiday gift for young game makers. It is recommended for ages 13 and up, or 10 and up with a parent. The parent or legal guardian buys and owns the license, and is responsible for the child’s use. Everything stays on the family PC when you use the default local model: there are no accounts for kids, and chat data is not sent anywhere. If someone chooses a cloud model in Settings, those prompts leave the PC. Please check the PC first — GameDevelopmentBot needs an NVIDIA RTX 20 series or newer, or AMD RX 6000 series or newer, with at least 8 GB VRAM; 12 GB recommended. See <a href="#gift">A great gift for young game makers</a> and the <a href="eula.html">EULA</a>.</p></details>
+      <details class="when-trial" hidden><summary>Is there a free trial?</summary><p>Yes &mdash; 2 hours of active building time, free, with just your email (no card). The clock only runs while GameDevelopmentBot is generating, building, or you are using it. That&rsquo;s enough to describe a game, get a playable build with assets and try changes. The trial is one project, Unity only, and trial builds carry a watermark. When the time is up, buy the $99 license and the same install unlocks with your game intact. Nothing is ever charged automatically.</p></details>
       <details><summary>Will the price stay $99?</summary><p>$99 is the launch price. The full release price is TBD and will be higher. Buy during Early Access to lock in the $99 launch price.</p></details>
       <details><summary>Do I need Unity?</summary><p>Only if you want the project opened and built in Unity. With Unreal Editor installed, GameDevelopmentBot can create the Unreal project and package a playable Windows build the same way. Design, docs, Blender assets and prep steps work without either engine.</p></details>
     </div>
@@ -279,6 +304,34 @@
   var CHECKOUT = {
     stripe: "https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00"
   };
+  // TRIAL_LIVE=false hides the free trial. Flip only after Derrold's OK (and Worker TRIAL_ENABLED=1).
+  var TRIAL_LIVE = true;
+  if (TRIAL_LIVE) {
+    document.querySelectorAll(".when-trial").forEach(function (el) { el.hidden = false; });
+    var tf = document.getElementById("trial-form"), tm = document.getElementById("trial-msg");
+    tf.addEventListener("submit", function (e) {
+      e.preventDefault();
+      tm.textContent = "Creating your trial key\u2026";
+      fetch(LICENSE_API + "/v1/trial/start", { method: "POST", headers: { "content-type": "application/json" },
+        body: JSON.stringify({ email: document.getElementById("trial-email").value }) })
+        .then(function (r) { return r.json(); })
+        .then(function (j) {
+          if (j.status !== "ok") { tm.textContent = j.message || "Couldn't start the trial. Try again."; return; }
+          tm.textContent = "";
+          document.getElementById("trial-key").textContent = j.key;
+          document.getElementById("trial-min").textContent = j.minutes;
+          document.getElementById("trial-dl").href = j.download_url;
+          if (j.model_url) { var m = document.getElementById("trial-model"); m.href = j.model_url; m.hidden = false; }
+          document.getElementById("trial-buy").href = CHECKOUT.stripe + "?client_reference_id=" + encodeURIComponent(j.key) +
+            "&prefilled_email=" + encodeURIComponent(document.getElementById("trial-email").value);
+          var tn = document.getElementById("trial-note"); tn.hidden = false; tn.scrollIntoView({ behavior: "smooth" });
+        })
+        .catch(function () { tm.textContent = "Couldn't reach the server. Try again in a minute."; });
+    });
+    document.getElementById("trial-copy").addEventListener("click", function () {
+      try { navigator.clipboard.writeText(document.getElementById("trial-key").textContent); this.textContent = "Copied"; } catch (e) {}
+    });
+  }
   if (BUY_LIVE) {
     document.body.classList.add("buy-live");
     document.querySelectorAll(".when-live").forEach(function (el) { el.hidden = false; });

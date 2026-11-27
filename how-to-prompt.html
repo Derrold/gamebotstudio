@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to prompt GameDevelopmentBot — AlphaMax Studios</title>
+<meta name="description" content="How to describe your game to GameDevelopmentBot 0.0.25: a labeled layout that skips answered questions, real models instead of gray placeholders, after-build changes, and how to work on a Unity or Unreal project you already built.">
+<meta property="og:title" content="How to prompt GameDevelopmentBot">
+<meta property="og:site_name" content="GameDevelopmentBot">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Start with a labeled layout or your whole idea in one message. Pick real asset packs to avoid gray placeholder blocks. Link a game you already built, in place.">
+<meta property="og:url" content="https://gamedevelopmentbot.com/how-to-prompt.html">
+<meta name="theme-color" content="#070d1c">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gbC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f7fb"/><stop offset=".5" stop-color="#aab6c6"/><stop offset="1" stop-color="#6b7889"/></linearGradient>
+    <linearGradient id="gbB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#1e40af"/></linearGradient>
+    <symbol id="gb-logo" viewBox="0 0 64 64">
+      <line x1="32" y1="4" x2="32" y2="11" stroke="#c7d2e0" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="32" cy="4" r="3" fill="#ef4444"/>
+      <rect x="14" y="11" width="36" height="26" rx="9" fill="url(#gbC)"/>
+      <rect x="18" y="15" width="28" height="17" rx="6" fill="#0b1324"/>
+      <circle cx="26" cy="23.5" r="3.4" fill="#ef4444"/><circle cx="38" cy="23.5" r="3.4" fill="#ef4444"/>
+      <rect x="9" y="20" width="5" height="9" rx="2" fill="url(#gbB)"/><rect x="50" y="20" width="5" height="9" rx="2" fill="url(#gbB)"/>
+      <path d="M14 44c0-4 3-7 7-7h22c4 0 7 3 7 7l3 9c1 4-3 7-6 5l-6-4H23l-6 4c-3 2-7-1-6-5z" fill="url(#gbB)" stroke="#c7d2e0" stroke-width="1.5"/>
+      <rect x="20" y="44" width="8" height="2.6" rx="1" fill="#e5ebf3"/><rect x="22.7" y="41.3" width="2.6" height="8" rx="1" fill="#e5ebf3"/>
+      <circle cx="40" cy="43.5" r="1.9" fill="#ef4444"/><circle cx="44.5" cy="47" r="1.9" fill="#ef4444"/>
+    </symbol>
+  </defs>
+</svg>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg width="36" height="36" role="img" aria-label="GameDevelopmentBot logo"><use href="#gb-logo"/></svg>GameDevelopmentBot</a>
+    <ul>
+      <li><a href="index.html#pipeline">Pipeline</a></li>
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#requirements">Requirements</a></li>
+      <li><a href="index.html#pricing">Pricing</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="how-to-prompt.html" aria-current="page">How to prompt</a></li>
+    </ul>
+  </div>
+</header>
+<main>
+  <section class="wrap legal-page guide-page">
+    <h1>How to prompt GameDevelopmentBot</h1>
+    <p class="legal-meta">A short guide for GameDevelopmentBot 0.0.25 &mdash; your first game, better builds, and working on a project you already made.</p>
+
+    <p>Write in plain words, as if you were briefing a teammate. Start with your whole idea in one message. GameDevelopmentBot still asks any remaining questions one at a time, and it keeps your full write-up to use in the build. Short answers to those questions are fine.</p>
+
+    <h2>1. Start with the whole idea in one message</h2>
+    <p>Put these in your first message when you can:</p>
+    <ul>
+      <li>The engine: <strong>Unity</strong> or <strong>Unreal</strong></li>
+      <li>The name, written as <strong>called [Your Game Name]</strong> (named or titled also works)</li>
+      <li>The genre, the setting, the art style, and what the player does</li>
+    </ul>
+    <p>The most reliable way in 0.0.25 is a <strong>pasted, labeled layout</strong>. Use lines like <strong>Name:</strong>, <strong>Engine:</strong>, <strong>Genre:</strong>, <strong>Loop:</strong>, <strong>Story:</strong>, <strong>Goals:</strong>, <strong>Setting:</strong>, and <strong>Art style:</strong>. GameDevelopmentBot reads those labels (Title, Core loop, Premise, and similar names work too) and <strong>skips the questions it already has answers for</strong>. It will only ask what is still missing. Template (Unity: 3D URP, recommended, or 3D Built-in; Unreal: Third Person, First Person, or Blank) and the zip-installer / Desktop-icon question are asked separately, because they are not part of that layout.</p>
+    <p>If you write in ordinary sentences instead, naming the engine and writing &ldquo;called [Name]&rdquo; still skips those two questions. A long write-up can also fill other fields when the answers are clearly in your text, but labeled lines are the surest way to skip them. Genre, when it is filled, must match one of the official 19: Action, Adventure, RPG, Shooter / FPS, Strategy, Simulation, Sports, Racing, Fighting, Horror, Platformer, Puzzle, Open World, Survival, Sandbox, Stealth, Battle Royale, MOBA, and MMORPG. A number or a name is fine (aliases like fps, sim, and br work too).</p>
+    <p>Nothing is created until the remaining questions are done. If you are not sure about a title, say &ldquo;you pick&rdquo; &mdash; you can rename later.</p>
+
+    <h2>2. Good answers vs. vague ones</h2>
+    <p>Specific beats vague. One short, concrete line is more useful than a long but fuzzy one.</p>
+    <div class="compare">
+      <div class="card">
+        <h3>Vague</h3>
+        <ul>
+          <li>&ldquo;Make a cool game.&rdquo;</li>
+          <li>&ldquo;It&rsquo;s in a forest.&rdquo;</li>
+          <li>&ldquo;Fun gameplay.&rdquo;</li>
+          <li>&ldquo;Nice graphics.&rdquo;</li>
+          <li>&ldquo;You win.&rdquo;</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Better</h3>
+        <ul>
+          <li>&ldquo;A third-person adventure called Pinewatch in Unity.&rdquo;</li>
+          <li>&ldquo;A small island fishing village at dusk, with a wooden dock and pine woods.&rdquo;</li>
+          <li>&ldquo;Search for tracks, sneak close, take a photo, return to the cabin.&rdquo;</li>
+          <li>&ldquo;Stylized low-poly, warm sunset lighting.&rdquo;</li>
+          <li>&ldquo;Reach the cabin before nightfall with three wildlife photos. You lose if you&rsquo;re spotted too often.&rdquo;</li>
+        </ul>
+      </div>
+    </div>
+    <p>For story, a short paragraph is enough; say &ldquo;light&rdquo; or &ldquo;none&rdquo; if you want almost no story. For art style, one phrase works: realistic, stylized, low-poly, pixel, horror-dark, cute, cartoon, and so on. When you ask for a change later, be just as specific &mdash; for example, say which axis to move on, which object, and by how much.</p>
+
+    <h2>3. The asset step: real models vs. gray blocks</h2>
+    <p>If the scene is full of gray square blocks, those are <strong>placeholders</strong>. They appear when GameDevelopmentBot does not have a real pack for something, or when you skip the asset step with &ldquo;just build&rdquo;, &ldquo;continue&rdquo;, or &ldquo;continue with placeholders&rdquo;.</p>
+    <p>On Unity, this step comes <strong>before</strong> the build. GameDevelopmentBot scans packs you already have on this PC and plans what the game needs (ground and terrain, trees and grass, buildings, props, characters, vehicles, and so on). If a need has no pack, it asks what to do:</p>
+    <ol>
+      <li>Use free Unity Asset Store packs: click Add to My Assets, then in Unity go to Window &gt; Package Manager &gt; My Assets and click Download. Say &ldquo;open my assets&rdquo; if you want that window opened for you.</li>
+      <li>Have it model the item in Blender and import it.</li>
+      <li>Use a simple placeholder for now.</li>
+    </ol>
+    <p>You can answer for everything at once (&ldquo;2&rdquo; or &ldquo;blender&rdquo;) or per item (&ldquo;trees blender&rdquo;). When the plan looks right, say <strong>build</strong> to start. Only say &ldquo;just build&rdquo; or &ldquo;continue with placeholders&rdquo; if you are fine with gray blocks for now and want to swap packs in later.</p>
+    <p>To get real models:</p>
+    <ul>
+      <li>Download the Unity Asset Store or Fab packs you already own <strong>before</strong> you rely on them. Unity: Window &gt; Package Manager &gt; My Assets &gt; Download. Unreal: Epic Games Launcher &gt; Unreal Engine &gt; Library (Fab) &gt; Add to Project.</li>
+      <li>GameDevelopmentBot scans downloaded packs in the Unity Asset Store cache and packs already inside your own Unity projects under Documents\UnityProjects. It also looks at the Epic VaultCache for Unreal. Packs you own in your account but have not downloaded on this PC will not show up yet.</li>
+      <li>Say <strong>my assets</strong> to see the list, then a pack number or name to use one. After a new download, say <strong>rescan</strong> or <strong>use my assets</strong> &mdash; you do not need to restart GameDevelopmentBot.</li>
+      <li>Prefer packs for ground and terrain, buildings and props, characters, and vehicles, plus anything else the plan lists for your genre (trees, weapons, audio, and so on).</li>
+    </ul>
+    <p>GameDevelopmentBot cannot complete a Unity sign-in for you. Sign in to Unity Hub or the editor yourself, then download the packs. One or two downloads is enough to start; it will not bulk-download your whole library.</p>
+    <p>For Unreal, the pre-build pack plan above is skipped. After the Unreal build, GameDevelopmentBot asks about assets one at a time. You can describe what you want (it can model it in Blender), say &ldquo;my assets&rdquo;, say &ldquo;free&rdquo; for a CC0 pick (Kenney, Quaternius, Poly Haven), or say &ldquo;skip&rdquo;.</p>
+
+    <h2>4. After the build</h2>
+    <p>Keep talking in the same chat, or open that game&rsquo;s chat from the sidebar. Projects GameDevelopmentBot creates live in Documents\GameProjects. Ask for changes in plain words, for example:</p>
+    <ul>
+      <li>&ldquo;Swap the player for the knight model.&rdquo;</li>
+      <li>&ldquo;Add trees around the map.&rdquo;</li>
+      <li>&ldquo;More enemies.&rdquo;</li>
+      <li>&ldquo;The player falls through the floor.&rdquo;</li>
+    </ul>
+    <p>To open a GameDevelopmentBot-made project in the Unity editor, say <strong>open [name] in Unity</strong> (for example, &ldquo;open Pinewatch in Unity&rdquo;). If something is wrong, describe the bug in the chat; GameDevelopmentBot can inspect the scene, try a fix, and rebuild. After a rebuild, say <strong>play</strong> when you want to try it. You can also say <strong>rebuild</strong> if you want a new Windows build, or <strong>undo</strong> to revert the last brief change (darker lighting, weather, player speed, and similar).</p>
+    <p>On Unity, after the first build it may also continue with asset questions one at a time (describe it, &ldquo;my assets&rdquo;, &ldquo;free&rdquo;, or &ldquo;skip&rdquo;). You can ask for a change at any time.</p>
+
+    <h2>5. Work on a game you already built</h2>
+    <p>Starting in <strong>0.0.25</strong>, GameDevelopmentBot can work on a Unity or Unreal project you made outside the app. Update to 0.0.25 first.</p>
+    <p>Click <strong>Open existing project</strong> in the left sidebar and pick the folder: for Unity, the project folder (the one that contains Assets) or the Assets folder itself; for Unreal, the folder that contains the <code>.uproject</code> file. You can also type a path in chat, for example <strong>open my game at D:\Games\MyGame</strong>. A path to the <code>.uproject</code> file works too.</p>
+    <p>It <strong>links the project where it already sits</strong>. Nothing is copied, moved, or changed by the link itself. A small entry is created under Documents\GameProjects for chat, an overview, backups, and later Windows builds (builds go to that GameProjects folder, not into your project). The linked chat then shows the project&rsquo;s scenes (or Unreal maps), scripts, and packages.</p>
+    <p>For Unity, it then <strong>asks before adding anything</strong> to your project: two small editor-only helper scripts in <code>Assets/Editor/GameDevelopmentBot</code>. They do not change your scenes, settings, or game code, and they are not included in your game build. You can delete that folder any time to remove them. Say yes if you want rebuilds and a detailed scene report from chat; say no if you prefer to add nothing. If you decline, it can still open the project, read scenes and scripts, make changes you ask for (with backups), and build from the scenes in File &gt; Build Settings.</p>
+    <p>After it is linked, you can say things like:</p>
+    <ul>
+      <li>&ldquo;open in unity&rdquo; (or &ldquo;open in unreal&rdquo;)</li>
+      <li>&ldquo;what does X do?&rdquo;</li>
+      <li>&ldquo;add a day/night cycle&rdquo;</li>
+      <li>&ldquo;fix the jump&rdquo;</li>
+      <li>&ldquo;rebuild&rdquo;</li>
+    </ul>
+    <p>Be specific about the change you want &mdash; for example, which object, which axis, and by how much. Before GameDevelopmentBot changes a file, it backs that file up under Documents\GameProjects\&lt;Name&gt;\Backups. After a Unity code change, it runs a compile check and will try to fix errors.</p>
+    <p>You need the project&rsquo;s <strong>exact Unity version installed in Unity Hub</strong> (Installs &gt; Install Editor &gt; Archive). Opening the project with a different Unity version upgrades it, and that is not easy to undo. If the matching editor is missing, GameDevelopmentBot will tell you the version to install. You can still ask it to open with another installed version anyway after you have a backup, but the default is to wait for the correct editor.</p>
+    <p>On Unreal, it can edit <strong>C++ only</strong> (files under Source and Config). It cannot edit Blueprint assets (<code>.uasset</code>) as text; for those it will explain the Blueprint steps instead of changing the asset for you.</p>
+
+    <h2>6. First prompts you can copy</h2>
+    <p>For a new game in 0.0.25, paste a labeled layout like this as your first message, then change the details to yours. GameDevelopmentBot will skip the questions this already answers, and only ask what is still missing (usually the template, and whether you want a zip installer and Desktop icon).</p>
+    <pre class="prompt-ex" tabindex="0">Name: Pinewatch
+Engine: Unity
+Genre: Adventure
+Loop: Search, sneak close, take a photo, and return to the cabin.
+Story: The player is a park ranger who explores a forest at dusk, follows animal tracks, and photographs rare wildlife before nightfall.
+Goals: Win by getting three wildlife photos back to the cabin before night. Lose if you are spotted too often.
+Setting: A small pine-woods park with a wooden cabin, a dirt path, and a lake.
+Art style: Stylized low-poly with warm sunset lighting.</pre>
+    <p>A single paragraph still works too. Put the engine and &ldquo;called [Name]&rdquo; in it so those questions are skipped. Labeled lines are more likely to skip the rest.</p>
+    <pre class="prompt-ex" tabindex="0">Make a third-person adventure game called Pinewatch in Unity. The player is a park ranger who explores a low-poly forest at dusk, follows animal tracks, and photographs rare wildlife before nightfall. The core loop is search, sneak close, take a photo, and return to the cabin. You win by getting three wildlife photos back to the cabin before night; you lose if you are spotted too often. The setting is a small pine-woods park with a wooden cabin, a dirt path, and a lake. The art style is stylized low-poly with warm sunset lighting. Use the 3D URP template.</pre>
+
+    <h2>7. Troubleshooting</h2>
+    <ul>
+      <li><strong>Update first for existing projects.</strong> Linking a game you already built, and skipping questions from a labeled layout, are 0.0.25 features. Update GameDevelopmentBot, then try again.</li>
+      <li><strong>Unity or Unreal must be installed</strong> if you want GameDevelopmentBot to open and build the project. With Unreal Editor installed, it can create the Unreal project and package a playable Windows build. Blender helps for one-of-a-kind assets. Design and docs still work without an engine.</li>
+      <li><strong>Linked Unity projects need the exact editor version</strong> that project was made with, installed in Unity Hub. A different version can upgrade the project in a way that is hard to undo.</li>
+      <li><strong>Unreal Blueprints.</strong> GameDevelopmentBot can change C++ in your linked Unreal project. It cannot edit Blueprint assets directly.</li>
+      <li><strong>Free trial:</strong> 120 minutes of active use, within 30 days, on one PC. The clock runs only while GameDevelopmentBot is generating, building, or you are using it; idle time does not count. The trial is one game project, Unity only (if you pick Unreal, say &ldquo;make it in Unity&rdquo; to keep going). Trial builds play on your PC and show a TRIAL watermark. Installers, desktop shortcuts, Unreal, and Steam or store prep are in the full version. The app needs internet to check in and count your time; if you stay offline too long, the trial pauses until it can check in again. When the time is used up, your project stays on your PC. Buying the $99 license unlocks the same install so you can keep going. No card is required for the trial, and nothing is charged automatically.</li>
+      <li><strong>Start the app and enter your key.</strong> After you install, start GameDevelopmentBot and paste the license or trial key from this website (or use the same email you used to start the trial).</li>
+      <li><strong>Owned packs are missing from the list.</strong> Owning a pack in your Unity or Fab account is not enough until it is downloaded on this PC. Download it in Package Manager &gt; My Assets (or the Fab library), then say &ldquo;rescan&rdquo; or &ldquo;use my assets&rdquo;.</li>
+      <li><strong>Gray square blocks in the game.</strong> Placeholders were used for missing packs, or the asset step was skipped with &ldquo;just build&rdquo; / &ldquo;continue with placeholders&rdquo;. Import or download real packs, then ask in chat to use them and rebuild.</li>
+      <li><strong>Internet.</strong> You need a connection to install GameDevelopmentBot and Ollama, to download models the first time, to download asset packs, and for the trial to check in. Day-to-day local AI runs on your PC. Optional cloud models in Settings send prompts off the PC and also need internet.</li>
+      <li><strong>Hardware.</strong> Windows 10 or 11 (64-bit), and an NVIDIA RTX 20 series or newer, or AMD RX 6000 series or newer, with at least 8 GB VRAM (12 GB recommended). See <a href="index.html#requirements">Requirements</a>.</li>
+    </ul>
+    <p>Questions: <a href="mailto:alphamaxstudios@gmail.com?subject=GameDevelopmentBot%20prompting%20help">alphamaxstudios@gmail.com</a> or <a href="https://discord.gg/4DDStUjdp" target="_blank" rel="noopener">Discord</a>.</p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="follow-us">
+      <span class="follow-label">Follow us</span>
+      <a href="https://x.com/AlphaMaxStudios" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>X</a>
+      <a href="https://www.youtube.com/@AlphaMaxStudiosHQ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3.04 3.04 0 0 0-2.14-2.15C19.54 3.6 12 3.6 12 3.6s-7.54 0-9.36.45A3.04 3.04 0 0 0 .5 6.2 31.8 31.8 0 0 0 0 12a31.8 31.8 0 0 0 .5 5.8 3.04 3.04 0 0 0 2.14 2.15C4.46 20.4 12 20.4 12 20.4s7.54 0 9.36-.45a3.04 3.04 0 0 0 2.14-2.15A31.8 31.8 0 0 0 24 12a31.8 31.8 0 0 0-.5-5.8zM9.75 15.57V8.43L15.84 12l-6.09 3.57z"/></svg>YouTube</a>
+      <a href="https://www.tiktok.com/@alphamaxstudios" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.59 6.69A5.6 5.6 0 0 1 16.2 5.2V16a5.2 5.2 0 1 1-5.2-5.2c.25 0 .5.02.74.06v2.7A2.55 2.55 0 1 0 13.7 16V2.25h2.5a5.6 5.6 0 0 0 3.39 4.44z"/></svg>TikTok</a>
+      <a href="https://www.facebook.com/profile.php?id=61596746583740" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12.07A10 10 0 1 0 10.75 22v-7.04H8.1v-2.89h2.65V9.87c0-2.62 1.56-4.07 3.95-4.07 1.14 0 2.34.2 2.34.2v2.57h-1.32c-1.3 0-1.7.81-1.7 1.64v1.97h2.9l-.46 2.89h-2.44V22A10 10 0 0 0 22 12.07z"/></svg>Facebook</a>
+      <a href="https://discord.gg/4DDStUjdp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.32 4.37A19.8 19.8 0 0 0 15.89 3l-.4.73a18.2 18.2 0 0 1 3.95 1.52 13.9 13.9 0 0 0-12.88 0A18.2 18.2 0 0 1 8.51 3.73L8.11 3A19.8 19.8 0 0 0 3.68 4.37C.54 9.03-.3 13.57.1 18.07A19.9 19.9 0 0 0 6 21l.73-1.13a13 13 0 0 1-2.05-.98l.4-.31a14.3 14.3 0 0 0 12.84 0l.4.31a13 13 0 0 1-2.05.98L18 21a19.9 19.9 0 0 0 5.9-2.93c.5-5.17-.73-9.68-3.58-13.7zM8.02 15.33c-1.18 0-2.15-1.08-2.15-2.4s.95-2.4 2.15-2.4 2.17 1.1 2.15 2.4c0 1.32-.97 2.4-2.15 2.4zm7.96 0c-1.18 0-2.15-1.08-2.15-2.4s.95-2.4 2.15-2.4 2.17 1.1 2.15 2.4c0 1.32-.96 2.4-2.15 2.4z"/></svg>Discord</a>
+    </p>
+    <p class="footer-links">© 2026 AlphaMax Studios · <a href="index.html">gamedevelopmentbot.com</a> · <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a> · <a href="how-to-prompt.html">How to prompt</a> · <a href="eula.html">EULA</a> · <a href="privacy.html">Privacy</a></p>
+    <span style="font-size:.8rem">Unity is a trademark of Unity Technologies. Steam is a trademark of Valve Corporation. NVIDIA is a trademark of NVIDIA Corporation. AMD is a trademark of Advanced Micro Devices, Inc. GameDevelopmentBot is not affiliated with or endorsed by them.</span>
+  </div>
+</footer>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dd1d087549eb4d16b326d7f46ad0f1a5"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

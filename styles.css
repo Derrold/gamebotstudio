@@ -103,3 +103,13 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mut);font-siz
 .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .video-card figcaption{margin:12px 0 0;color:var(--mut);font-size:.92rem}
 @media (max-width:860px){.videos{grid-template-columns:1fr}}
+
+/* How to prompt guide */
+.nav a[aria-current="page"]{color:var(--txt);font-weight:700}
+.guide-page{max-width:800px}
+.guide-page .compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0 22px}
+.guide-page .compare .card h3{margin:0 0 10px;font-size:1.05rem}
+.guide-page .compare .card ul{margin:0;padding-left:1.15rem}
+.guide-page .compare .card li{color:var(--mut);margin:0 0 8px}
+.guide-page .prompt-ex{margin:16px 0 8px;padding:18px 20px;border-radius:16px;border:1px solid var(--line);background:var(--card);color:var(--txt);font:0.95rem/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre-wrap;overflow-x:auto;user-select:all}
+@media (max-width:860px){.guide-page .compare{grid-template-columns:1fr}}

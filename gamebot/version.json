@@ -1,13 +1,13 @@
 {
-  "version": "0.0.24",
-  "display": "V0.24",
-  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.24.zip",
-  "sha256": "79f241ff5c22db5f3c121a9aa0da4a2f48abc44a84496d0472523af943676996",
-  "size": 2726765,
+  "version": "0.0.25",
+  "display": "V0.25",
+  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.25.zip",
+  "sha256": "3e3a563a421dc39cdeb74d3fc99eb46e2ddd77b9bd671ddb9a498db82b751f24",
+  "size": 2754485,
   "released": "2026-11-27",
-  "notes": "GameDevelopmentBot V0.24: if you started the free trial on the website, the app now activates that same key when you enter the same email (it still will not move a trial to a different PC). Started a trial on the website? Paste the GB1 key from that page below and click Activate license. First-run stays on top after Setup. Internal lesson and dev files are no longer in the installer.",
+  "notes": "GameDevelopmentBot V0.25: Open existing project - link a Unity or Unreal game you already made (click Open existing project or paste its folder path in chat). It stays where it is; GameDevelopmentBot shows its scenes, scripts and packages, opens it in the right editor, makes the changes you ask for (backing files up first and checking they compile) and builds it. Paste your whole game layout as your first message and it only asks what's missing. New How to prompt link in the sidebar opens the prompting guide in your browser. Free trial rules (time meter, TRIAL watermark) now also apply to linked projects. Your project is protected: before the first change GameDevelopmentBot saves a full safety snapshot zip (or a git commit if you prefer), and \"undo all changes\" / \"restore snapshot\" puts it back.",
   "setup_url": "https://gamebot-licenses.alphamaxstudios.workers.dev/dl/",
-  "setup_sha256": "6e72c23c68e422c0fb7d9a5fbaa1c17e7531bb932454f1d6b3988ef6160ef721",
-  "setup_size": 4714300,
-  "signature": "BL2sTyrUbU0jL3fdX672zfhynqQyDzJYQIh2++ZoL6m2UOCz0tkb5bf/hlkFQAfa/TRGb5qAuTPXzo03GVbLBA=="
+  "setup_sha256": "a2c7012c31815837bae2ab4e09558446e79c81477ab2f79cd8df0037375931f1",
+  "setup_size": 4733840,
+  "signature": "/6CCvcvc1heu4Uy+zjdVV7d1RB1T2nyqGNMNWz8hPbf5GIR/Pe/Y51qnNRN8ifDdABBZOBvNQh2sNWUcrh6MAQ=="
 }

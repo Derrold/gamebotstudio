@@ -1,13 +1,13 @@
 {
-  "version": "0.0.23",
-  "display": "V0.23",
-  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.23.zip",
-  "sha256": "e15382b58116b3d8f78916140da8bead88901487b6a9000657114e48e774e4fa",
-  "size": 2919280,
+  "version": "0.0.24",
+  "display": "V0.24",
+  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.24.zip",
+  "sha256": "79f241ff5c22db5f3c121a9aa0da4a2f48abc44a84496d0472523af943676996",
+  "size": 2726765,
   "released": "2026-11-27",
-  "notes": "GameDevelopmentBot V0.23: first-run now installs every package in requirements.txt (including webdriver-manager), and a missing optional Firefox/Selenium package can no longer stop the app from starting. Also includes the V0.22 trial-start TLS fix.",
+  "notes": "GameDevelopmentBot V0.24: if you started the free trial on the website, the app now activates that same key when you enter the same email (it still will not move a trial to a different PC). Started a trial on the website? Paste the GB1 key from that page below and click Activate license. First-run stays on top after Setup. Internal lesson and dev files are no longer in the installer.",
   "setup_url": "https://gamebot-licenses.alphamaxstudios.workers.dev/dl/",
-  "setup_sha256": "3d438ff21c5fc281b8b26ac31a25bd49c6db91c30efd64e8547b503e300192db",
-  "setup_size": 4765563,
-  "signature": "jjA1SfM37ga/ILtofvZiE7scOW53+8xFZ6ZuEfICYgYxUUVxQ637MyaG4xTbs3LNf2lcNA0tfGyu3kY7l0yBCA=="
+  "setup_sha256": "6e72c23c68e422c0fb7d9a5fbaa1c17e7531bb932454f1d6b3988ef6160ef721",
+  "setup_size": 4714300,
+  "signature": "BL2sTyrUbU0jL3fdX672zfhynqQyDzJYQIh2++ZoL6m2UOCz0tkb5bf/hlkFQAfa/TRGb5qAuTPXzo03GVbLBA=="
 }

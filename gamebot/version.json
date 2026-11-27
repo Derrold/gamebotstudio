@@ -1,13 +1,13 @@
 {
-  "version": "0.0.22",
-  "display": "V0.22",
-  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.22.zip",
-  "sha256": "6cc7376a0350f58c55e92cf25aa016be2096b3272b83d4b4edd6b10ccbda2382",
-  "size": 2915606,
+  "version": "0.0.23",
+  "display": "V0.23",
+  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.23.zip",
+  "sha256": "e15382b58116b3d8f78916140da8bead88901487b6a9000657114e48e774e4fa",
+  "size": 2919280,
   "released": "2026-11-27",
-  "notes": "GameDevelopmentBot V0.22: fixes first-run trial start on Windows PCs where Python rejected a valid license-server certificate, and shows the real error (including if this email or PC already used the free trial). Still a visible first-run window, email-only trial (no card, 120 active minutes, Unity only), WebView2 help, and first-launch pip.",
+  "notes": "GameDevelopmentBot V0.23: first-run now installs every package in requirements.txt (including webdriver-manager), and a missing optional Firefox/Selenium package can no longer stop the app from starting. Also includes the V0.22 trial-start TLS fix.",
   "setup_url": "https://gamebot-licenses.alphamaxstudios.workers.dev/dl/",
-  "setup_sha256": "633d1bd7e52df642effd973bf0b62640b68e3746a42496d282d2d37a2ae1de54",
-  "setup_size": 4764417,
-  "signature": "iThsGCCTOSYC0lRHbRxb3cQmU5SNK+BwOYJdlYCCo8FqMwp7j1/dIOBh9OxzJlnQyZRgU3SLJdmU+C7HeYifCw=="
+  "setup_sha256": "3d438ff21c5fc281b8b26ac31a25bd49c6db91c30efd64e8547b503e300192db",
+  "setup_size": 4765563,
+  "signature": "jjA1SfM37ga/ILtofvZiE7scOW53+8xFZ6ZuEfICYgYxUUVxQ637MyaG4xTbs3LNf2lcNA0tfGyu3kY7l0yBCA=="
 }

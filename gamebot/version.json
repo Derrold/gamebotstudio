@@ -1,13 +1,13 @@
 {
-  "version": "0.0.20",
-  "display": "V0.20",
-  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.20.zip",
-  "sha256": "1004a7d7355f5984ff203aaaedc120ed1596731a5f3c04e8191acfe2e519c70b",
-  "size": 2909232,
-  "released": "2026-11-26",
-  "notes": "GameDevelopmentBot V0.20: adds the 2-hour free trial (try before you buy; buying unlocks the same install). Includes everything in V0.19.",
+  "version": "0.0.21",
+  "display": "V0.21",
+  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.21.zip",
+  "sha256": "0840432554674a4f857d3d4718615c1424a129cc0a06d2a4c60abe890e9bed06",
+  "size": 2914893,
+  "released": "2026-11-27",
+  "notes": "GameDevelopmentBot V0.21: the free trial starts from a visible first-run window with just your email (no card, 120 active minutes, Unity only). Also installs or guides Microsoft Edge WebView2, installs Python packages on first launch if Setup could not, and shows a clear error if the app cannot open.",
   "setup_url": "https://gamebot-licenses.alphamaxstudios.workers.dev/dl/",
-  "setup_sha256": "59ca49d06e8e069fa95fbe7dc9535ce83f3ac095c018951bfdbb4a12da0647b4",
-  "setup_size": 4759506,
-  "signature": "xJr3GmCL0jRP2+5cQrSmdf9lErbolpaTPr+qsVk/vxkBNNnXDumwS8iA+psqTZI2Ov/oEr2rM9g1SuwPm+fiCQ=="
+  "setup_sha256": "3583f50b6232173f32fa67683d525bf95fffdd6d683926480b43ae4d142fc8b8",
+  "setup_size": 4763916,
+  "signature": "vD8f5j5Mdgi0yIhP6NuyGjx1j4/63M6w3twVKmIm9E48E5k8yz6I7JfgQC8Wz26rOrvPGRCGLNiewlu6ryzFBA=="
 }

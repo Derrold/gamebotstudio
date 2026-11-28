@@ -2,12 +2,12 @@
   "version": "0.0.28",
   "display": "V0.28",
   "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.28.zip",
-  "sha256": "f221d515fba0b6bc644ae969e2feb28278170dd69d7a8ef50b38768dcf23fc58",
-  "size": 2963006,
+  "sha256": "a20759e49d9f81584fd3194fd3b5f37af7370a8c1f9c1cda51bee82c08118a9b",
+  "size": 2964548,
   "released": "2026-11-28",
   "notes": "GameDevelopmentBot V0.28: picture -> 3D model. Give it a picture of one object (PNG/JPG) and it builds a textured 3D model (GLB + FBX, copied into your Unity project) on your own GPU - NVIDIA or AMD with 8 GB VRAM. The first time, a one-time background setup (about 20 GB, ~25 GB free disk) picks the right build for your graphics card. Needs 16 GB RAM with the Windows pagefile on (32 GB recommended). Powered by Tencent Hunyuan3D 2 (Tencent Hunyuan 3D 2.0 Community License). GameDevelopmentBot is not available in the EU, UK or South Korea.",
   "setup_url": "https://gamebot-licenses.alphamaxstudios.workers.dev/dl/",
-  "setup_sha256": "f9a19d63a0dffa504a90e6e7e3d7ed7dc22f784e4d21360adb92c1841b9972ad",
-  "setup_size": 4881176,
-  "signature": "LyPukeRoDhvWFalRK3tq0sJRI43vNMqnlyVxo6BCED0mLm+HyG7gUYL9XAFosBZX6MArLf6KIa+4UFrsAFCSBA=="
+  "setup_sha256": "5d3dcb4025da03377ae30c4fbff2c1687797ea40aeafea4777b3eb71461433d6",
+  "setup_size": 4882056,
+  "signature": "Tac4FZfegaY1F7DOhucDES9qPFfdX2/mAgVJLW8bn/JKhDH81GJox0/Fwd4l/hlk7RLE8+UuDzG/ACRL2T6iBw=="
 }

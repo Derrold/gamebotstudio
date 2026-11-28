@@ -1,13 +1,13 @@
 {
-  "version": "0.0.26",
-  "display": "V0.26",
-  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.26.zip",
-  "sha256": "0a8eb8031839e295abab98f9f4e19de2fb07ef7b9cc1423c650a9aaa643ad6c5",
-  "size": 2758933,
+  "version": "0.0.27",
+  "display": "V0.27",
+  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.27.zip",
+  "sha256": "4d361a00ad540a82bac252c0fba0ba44c78dce1947ac7d7210f0924cf3ee65b3",
+  "size": 2780978,
   "released": "2026-11-27",
-  "notes": "GameDevelopmentBot V0.26: fixes for the Open existing project and How to prompt buttons (they could show SyntaxError lines when an older GameDevelopmentBot was still running in the background after an update - the app and Setup now replace that old background copy). Each new chat now starts its own game: a game idea typed in a new chat (for example \"a fantasy RPG where...\") starts the new-game questions and builds its own genre, instead of reusing the game from another chat. Free trial: the one-project limit is shown right away instead of after the questions.",
+  "notes": "GameDevelopmentBot V0.27: paste your whole plan in one message. A paragraph or list of everything you want (the game idea plus each feature) is read in one go: it fills sensible defaults, asks at most one short question (only the engine if you have both Unity and Unreal, or missing assets), then builds the game and works through your tasks in order, reporting each one. Say \"just do it\" or \"use defaults\" to skip the question. A list of changes sent in an existing game's chat runs as edits on that game with one rebuild - no new questions. New: bosses and extra enemies for every game type, models you ask for are placed in the level, warmer sunsets, and the version shows as 0.0.27.",
   "setup_url": "https://gamebot-licenses.alphamaxstudios.workers.dev/dl/",
-  "setup_sha256": "7fe11aabdaf36406ed21667b3003c2c5f4e474b38f7584ef0a5e0deab38d3ae4",
-  "setup_size": 4737074,
-  "signature": "2fRHbzziK2xbpSYp0R6oNIDfQetWytsCfRGN7hDHo2ok8KQs9HeSd8EaYzlrYxy0jb/X4zhZ+48F7ULfgpI7AQ=="
+  "setup_sha256": "0ab240def5834f969734b5661d86bbf0bf7a82b850987c019e97f6d93dc1ddd8",
+  "setup_size": 4753630,
+  "signature": "dI+RYmrmCCEy9wXVk5azqo6vVh+sRTdonUq3qQi/Lhucau+IHDvVmFvC3qYKwpnmdGfaIr9gICnI9JAD7aaoDg=="
 }

@@ -1,13 +1,13 @@
 {
-  "version": "0.0.28",
-  "display": "V0.28",
-  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.28.zip",
-  "sha256": "a20759e49d9f81584fd3194fd3b5f37af7370a8c1f9c1cda51bee82c08118a9b",
-  "size": 2964548,
+  "version": "0.0.29",
+  "display": "V0.29",
+  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.29.zip",
+  "sha256": "c8bd6abae37f068275335b0f8891862435571d309ecb64acc8d06ac2a293e075",
+  "size": 2964544,
   "released": "2026-11-28",
-  "notes": "GameDevelopmentBot V0.28: picture -> 3D model. Give it a picture of one object (PNG/JPG) and it builds a textured 3D model (GLB + FBX, copied into your Unity project) on your own GPU - NVIDIA or AMD with 8 GB VRAM. The first time, a one-time background setup (about 20 GB, ~25 GB free disk) picks the right build for your graphics card. Needs 16 GB RAM with the Windows pagefile on (32 GB recommended). Powered by Tencent Hunyuan3D 2 (Tencent Hunyuan 3D 2.0 Community License). GameDevelopmentBot is not available in the EU, UK or South Korea.",
+  "notes": "GameDevelopmentBot V0.29: picture -> 3D model, now more reliable in chat (it always runs the real 3D generator for your picture and frees the graphics card first). Give it a picture of one object (PNG/JPG) and it builds a textured 3D model (GLB + FBX, copied into your Unity project) on your own GPU - NVIDIA or AMD with 8 GB VRAM. The first time, a one-time background setup (about 20 GB, ~25 GB free disk) picks the right build for your graphics card. Needs 16 GB RAM with the Windows pagefile on (32 GB recommended). Powered by Tencent Hunyuan3D 2 (Tencent Hunyuan 3D 2.0 Community License). GameDevelopmentBot is not available in the EU, UK or South Korea.",
   "setup_url": "https://gamebot-licenses.alphamaxstudios.workers.dev/dl/",
-  "setup_sha256": "5d3dcb4025da03377ae30c4fbff2c1687797ea40aeafea4777b3eb71461433d6",
-  "setup_size": 4882056,
-  "signature": "Tac4FZfegaY1F7DOhucDES9qPFfdX2/mAgVJLW8bn/JKhDH81GJox0/Fwd4l/hlk7RLE8+UuDzG/ACRL2T6iBw=="
+  "setup_sha256": "550b76ff91fb7fe7c0b5b4c101df91d0eefb8d8c77d04abd024ed0c03d904ef0",
+  "setup_size": 4882003,
+  "signature": "qT4M3L8luctV1wi2VhKueB+LHrE6vHrx6NzJNe5Qrjtq/SNEqA7hw9yCkjHemPRaK89CsFep20ARx8+vtj2gAg=="
 }

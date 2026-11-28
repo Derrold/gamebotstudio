@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>How to prompt GameDevelopmentBot — AlphaMax Studios</title>
-<meta name="description" content="How to describe your game to GameDevelopmentBot 0.0.25: a labeled layout that skips answered questions, real models instead of gray placeholders, after-build changes, and how to work on a Unity or Unreal project you already built.">
+<meta name="description" content="How to describe your game to GameDevelopmentBot 0.0.26: a labeled layout that skips answered questions, real models instead of gray placeholders, after-build changes, and how to work on a Unity or Unreal project you already built.">
 <meta property="og:title" content="How to prompt GameDevelopmentBot">
 <meta property="og:site_name" content="GameDevelopmentBot">
 <meta property="og:type" content="website">
@@ -48,7 +48,7 @@
 <main>
   <section class="wrap legal-page guide-page">
     <h1>How to prompt GameDevelopmentBot</h1>
-    <p class="legal-meta">A short guide for GameDevelopmentBot 0.0.25 &mdash; your first game, better builds, and working on a project you already made.</p>
+    <p class="legal-meta">A short guide for GameDevelopmentBot 0.0.26 &mdash; your first game, better builds, and working on a project you already made.</p>
 
     <p>Write in plain words, as if you were briefing a teammate. Start with your whole idea in one message. GameDevelopmentBot still asks any remaining questions one at a time, and it keeps your full write-up to use in the build. Short answers to those questions are fine.</p>
 
@@ -59,7 +59,7 @@
       <li>The name, written as <strong>called [Your Game Name]</strong> (named or titled also works)</li>
       <li>The genre, the setting, the art style, and what the player does</li>
     </ul>
-    <p>The most reliable way in 0.0.25 is a <strong>pasted, labeled layout</strong>. Use lines like <strong>Name:</strong>, <strong>Engine:</strong>, <strong>Genre:</strong>, <strong>Loop:</strong>, <strong>Story:</strong>, <strong>Goals:</strong>, <strong>Setting:</strong>, and <strong>Art style:</strong>. GameDevelopmentBot reads those labels (Title, Core loop, Premise, and similar names work too) and <strong>skips the questions it already has answers for</strong>. It will only ask what is still missing. Template (Unity: 3D URP, recommended, or 3D Built-in; Unreal: Third Person, First Person, or Blank) and the zip-installer / Desktop-icon question are asked separately, because they are not part of that layout.</p>
+    <p>The most reliable way in 0.0.26 is a <strong>pasted, labeled layout</strong>. Use lines like <strong>Name:</strong>, <strong>Engine:</strong>, <strong>Genre:</strong>, <strong>Loop:</strong>, <strong>Story:</strong>, <strong>Goals:</strong>, <strong>Setting:</strong>, and <strong>Art style:</strong>. GameDevelopmentBot reads those labels (Title, Core loop, Premise, and similar names work too) and <strong>skips the questions it already has answers for</strong>. It will only ask what is still missing. Template (Unity: 3D URP, recommended, or 3D Built-in; Unreal: Third Person, First Person, or Blank) and the zip-installer / Desktop-icon question are asked separately, because they are not part of that layout.</p>
     <p>If you write in ordinary sentences instead, naming the engine and writing &ldquo;called [Name]&rdquo; still skips those two questions. A long write-up can also fill other fields when the answers are clearly in your text, but labeled lines are the surest way to skip them. Genre, when it is filled, must match one of the official 19: Action, Adventure, RPG, Shooter / FPS, Strategy, Simulation, Sports, Racing, Fighting, Horror, Platformer, Puzzle, Open World, Survival, Sandbox, Stealth, Battle Royale, MOBA, and MMORPG. A number or a name is fine (aliases like fps, sim, and br work too).</p>
     <p>Nothing is created until the remaining questions are done. If you are not sure about a title, say &ldquo;you pick&rdquo; &mdash; you can rename later.</p>
 
@@ -120,7 +120,7 @@
     <p>On Unity, after the first build it may also continue with asset questions one at a time (describe it, &ldquo;my assets&rdquo;, &ldquo;free&rdquo;, or &ldquo;skip&rdquo;). You can ask for a change at any time.</p>
 
     <h2>5. Work on a game you already built</h2>
-    <p>Starting in <strong>0.0.25</strong>, GameDevelopmentBot can work on a Unity or Unreal project you made outside the app. Update to 0.0.25 first.</p>
+    <p>Starting in 0.0.25 (and in 0.0.26), GameDevelopmentBot can work on a Unity or Unreal project you made outside the app. Update to 0.0.26 first.</p>
     <p>Click <strong>Open existing project</strong> in the left sidebar and pick the folder: for Unity, the project folder (the one that contains Assets) or the Assets folder itself; for Unreal, the folder that contains the <code>.uproject</code> file. You can also type a path in chat, for example <strong>open my game at D:\Games\MyGame</strong>. A path to the <code>.uproject</code> file works too.</p>
     <p>It <strong>links the project where it already sits</strong>. Nothing is copied, moved, or changed by the link itself. A small entry is created under Documents\GameProjects for chat, an overview, backups, and later Windows builds (builds go to that GameProjects folder, not into your project). The linked chat then shows the project&rsquo;s scenes (or Unreal maps), scripts, and packages.</p>
     <p>For Unity, it then <strong>asks before adding anything</strong> to your project: two small editor-only helper scripts in <code>Assets/Editor/GameDevelopmentBot</code>. They do not change your scenes, settings, or game code, and they are not included in your game build. You can delete that folder any time to remove them. Say yes if you want rebuilds and a detailed scene report from chat; say no if you prefer to add nothing. If you decline, it can still open the project, read scenes and scripts, make changes you ask for (with backups), and build from the scenes in File &gt; Build Settings.</p>
@@ -137,7 +137,7 @@
     <p>On Unreal, it can edit <strong>C++ only</strong> (files under Source and Config). It cannot edit Blueprint assets (<code>.uasset</code>) as text; for those it will explain the Blueprint steps instead of changing the asset for you.</p>
 
     <h2>6. First prompts you can copy</h2>
-    <p>For a new game in 0.0.25, paste a labeled layout like this as your first message, then change the details to yours. GameDevelopmentBot will skip the questions this already answers, and only ask what is still missing (usually the template, and whether you want a zip installer and Desktop icon).</p>
+    <p>For a new game in 0.0.26, paste a labeled layout like this as your first message, then change the details to yours. GameDevelopmentBot will skip the questions this already answers, and only ask what is still missing (usually the template, and whether you want a zip installer and Desktop icon).</p>
     <pre class="prompt-ex" tabindex="0">Name: Pinewatch
 Engine: Unity
 Genre: Adventure
@@ -151,7 +151,7 @@ Art style: Stylized low-poly with warm sunset lighting.</pre>
 
     <h2>7. Troubleshooting</h2>
     <ul>
-      <li><strong>Update first for existing projects.</strong> Linking a game you already built, and skipping questions from a labeled layout, are 0.0.25 features. Update GameDevelopmentBot, then try again.</li>
+      <li><strong>Update first for existing projects.</strong> Linking a game you already built, and skipping questions from a labeled layout, are in 0.0.26 (added in 0.0.25). Update GameDevelopmentBot, then try again.</li>
       <li><strong>Unity or Unreal must be installed</strong> if you want GameDevelopmentBot to open and build the project. With Unreal Editor installed, it can create the Unreal project and package a playable Windows build. Blender helps for one-of-a-kind assets. Design and docs still work without an engine.</li>
       <li><strong>Linked Unity projects need the exact editor version</strong> that project was made with, installed in Unity Hub. A different version can upgrade the project in a way that is hard to undo.</li>
       <li><strong>Unreal Blueprints.</strong> GameDevelopmentBot can change C++ in your linked Unreal project. It cannot edit Blueprint assets directly.</li>

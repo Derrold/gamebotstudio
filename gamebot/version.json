@@ -1,13 +1,13 @@
 {
-  "version": "0.0.25",
-  "display": "V0.25",
-  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.25.zip",
-  "sha256": "3e3a563a421dc39cdeb74d3fc99eb46e2ddd77b9bd671ddb9a498db82b751f24",
-  "size": 2754485,
+  "version": "0.0.26",
+  "display": "V0.26",
+  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.26.zip",
+  "sha256": "0a8eb8031839e295abab98f9f4e19de2fb07ef7b9cc1423c650a9aaa643ad6c5",
+  "size": 2758933,
   "released": "2026-11-27",
-  "notes": "GameDevelopmentBot V0.25: Open existing project - link a Unity or Unreal game you already made (click Open existing project or paste its folder path in chat). It stays where it is; GameDevelopmentBot shows its scenes, scripts and packages, opens it in the right editor, makes the changes you ask for (backing files up first and checking they compile) and builds it. Paste your whole game layout as your first message and it only asks what's missing. New How to prompt link in the sidebar opens the prompting guide in your browser. Free trial rules (time meter, TRIAL watermark) now also apply to linked projects. Your project is protected: before the first change GameDevelopmentBot saves a full safety snapshot zip (or a git commit if you prefer), and \"undo all changes\" / \"restore snapshot\" puts it back.",
+  "notes": "GameDevelopmentBot V0.26: fixes for the Open existing project and How to prompt buttons (they could show SyntaxError lines when an older GameDevelopmentBot was still running in the background after an update - the app and Setup now replace that old background copy). Each new chat now starts its own game: a game idea typed in a new chat (for example \"a fantasy RPG where...\") starts the new-game questions and builds its own genre, instead of reusing the game from another chat. Free trial: the one-project limit is shown right away instead of after the questions.",
   "setup_url": "https://gamebot-licenses.alphamaxstudios.workers.dev/dl/",
-  "setup_sha256": "a2c7012c31815837bae2ab4e09558446e79c81477ab2f79cd8df0037375931f1",
-  "setup_size": 4733840,
-  "signature": "/6CCvcvc1heu4Uy+zjdVV7d1RB1T2nyqGNMNWz8hPbf5GIR/Pe/Y51qnNRN8ifDdABBZOBvNQh2sNWUcrh6MAQ=="
+  "setup_sha256": "7fe11aabdaf36406ed21667b3003c2c5f4e474b38f7584ef0a5e0deab38d3ae4",
+  "setup_size": 4737074,
+  "signature": "2fRHbzziK2xbpSYp0R6oNIDfQetWytsCfRGN7hDHo2ok8KQs9HeSd8EaYzlrYxy0jb/X4zhZ+48F7ULfgpI7AQ=="
 }

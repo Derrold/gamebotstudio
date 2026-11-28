@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>How to prompt GameDevelopmentBot — AlphaMax Studios</title>
-<meta name="description" content="How to describe your game to GameDevelopmentBot 0.0.27: paste your whole plan in one message, at most one question, every task done in order, real models instead of gray placeholders, after-build changes, and how to work on a Unity or Unreal project you already built.">
+<meta name="description" content="How to describe your game to GameDevelopmentBot 0.0.28: paste your whole plan in one message, turn a picture into a 3D model, at most one question, every task done in order, real models instead of gray placeholders, after-build changes, and how to work on a Unity or Unreal project you already built.">
 <meta property="og:title" content="How to prompt GameDevelopmentBot">
 <meta property="og:site_name" content="GameDevelopmentBot">
 <meta property="og:type" content="website">
@@ -48,7 +48,7 @@
 <main>
   <section class="wrap legal-page guide-page">
     <h1>How to prompt GameDevelopmentBot</h1>
-    <p class="legal-meta">A short guide for GameDevelopmentBot 0.0.27 &mdash; your first game, better builds, and working on a project you already made.</p>
+    <p class="legal-meta">A short guide for GameDevelopmentBot 0.0.28 &mdash; your first game, better builds, and working on a project you already made.</p>
 
     <p>Write in plain words, as if you were briefing a teammate. <strong>Paste your whole plan in one message</strong>: the game idea plus every feature or change you want, as a paragraph or a list. Starting in 0.0.27, GameDevelopmentBot reads all of it, fills in sensible defaults for anything you left out, asks <strong>at most one short question</strong> (only if it really needs an answer), then builds the game and works through your list in order, telling you what it did for each item.</p>
 
@@ -116,7 +116,20 @@ Win by clearing all enemies.</pre>
     <p>GameDevelopmentBot cannot complete a Unity sign-in for you. Sign in to Unity Hub or the editor yourself, then download the packs. One or two downloads is enough to start; it will not bulk-download your whole library.</p>
     <p>For Unreal, the pre-build pack plan above is skipped. After the Unreal build, GameDevelopmentBot asks about assets one at a time. You can describe what you want (it can model it in Blender), say &ldquo;my assets&rdquo;, say &ldquo;free&rdquo; for a CC0 pick (Kenney, Quaternius, Poly Haven), or say &ldquo;skip&rdquo;.</p>
 
-    <h2>4. After the build</h2>
+    <h2>4. Turn a picture into a 3D model (new in 0.0.28)</h2>
+    <p>Have a picture of one thing you want in your game &mdash; a deer, a car, a watchtower? GameDevelopmentBot can turn a <strong>PNG or JPG of one object</strong> into a textured 3D model on your own graphics card (NVIDIA or AMD, 8 GB VRAM). Give it the file path in plain words:</p>
+    <pre class="prompt-ex" tabindex="0">Turn this picture into a 3D model for Pinewatch: C:\Users\Me\Pictures\watchtower.png</pre>
+    <ul>
+      <li><strong>First time:</strong> it starts a one-time setup in the background (about 20 GB download; keep about 25 GB free). Keep chatting, and ask again when it says the 3D generator is ready.</li>
+      <li><strong>How long:</strong> about 1&ndash;2 minutes per model on a fast NVIDIA card, about 6&ndash;15 minutes on an 8 GB AMD card (longer if other programs are using the graphics card).</li>
+      <li><strong>Where it goes:</strong> GLB and FBX files in the game&rsquo;s <code>Art\Generated3D</code> folder. On Unity it is also copied into the project under <code>Assets</code> and the game is rebuilt. On Unreal, import the FBX (or GLB) from that folder.</li>
+      <li><strong>Best pictures:</strong> one object, front or 3/4 view, filling most of the frame, plain background (the background is cut out for you). Use only pictures you made or have the rights to.</li>
+      <li><strong>No FBX?</strong> Install Blender (free) so it can make the FBX; the GLB is always there.</li>
+      <li><strong>Memory:</strong> 16 GB RAM works with the Windows pagefile on; 32 GB is recommended. Close big programs while a model generates.</li>
+    </ul>
+    <p class="note">Picture&rarr;3D is Powered by Tencent Hunyuan (Tencent Hunyuan 3D 2.0 Community License). GameDevelopmentBot is <strong>not available in the EU, UK or South Korea</strong>. Don&rsquo;t use its 3D output to train or improve other AI models.</p>
+
+    <h2>5. After the build</h2>
     <p>Keep talking in the same chat, or open that game&rsquo;s chat from the sidebar. Projects GameDevelopmentBot creates live in Documents\GameProjects. You can paste a <strong>list of changes</strong> in one message (for example &ldquo;make it night, add 20 enemies, add a red barn, add a minimap&rdquo;): it does each one in order on that same game, tells you what happened to each, and rebuilds once &mdash; no new questions. Single changes in plain words work too, for example:</p>
     <ul>
       <li>&ldquo;Swap the player for the knight model.&rdquo;</li>
@@ -127,7 +140,7 @@ Win by clearing all enemies.</pre>
     <p>To open a GameDevelopmentBot-made project in the Unity editor, say <strong>open [name] in Unity</strong> (for example, &ldquo;open Pinewatch in Unity&rdquo;). If something is wrong, describe the bug in the chat; GameDevelopmentBot can inspect the scene, try a fix, and rebuild. After a rebuild, say <strong>play</strong> when you want to try it. You can also say <strong>rebuild</strong> if you want a new Windows build, or <strong>undo</strong> to revert the last brief change (darker lighting, weather, player speed, and similar).</p>
     <p>On Unity, after the first build it may also continue with asset questions one at a time (describe it, &ldquo;my assets&rdquo;, &ldquo;free&rdquo;, or &ldquo;skip&rdquo;). You can ask for a change at any time.</p>
 
-    <h2>5. Work on a game you already built</h2>
+    <h2>6. Work on a game you already built</h2>
     <p>Starting in 0.0.25, GameDevelopmentBot can work on a Unity or Unreal project you made outside the app. Update to the latest version first.</p>
     <p>Click <strong>Open existing project</strong> in the left sidebar and pick the folder: for Unity, the project folder (the one that contains Assets) or the Assets folder itself; for Unreal, the folder that contains the <code>.uproject</code> file. You can also type a path in chat, for example <strong>open my game at D:\Games\MyGame</strong>. A path to the <code>.uproject</code> file works too.</p>
     <p>It <strong>links the project where it already sits</strong>. Nothing is copied, moved, or changed by the link itself. A small entry is created under Documents\GameProjects for chat, an overview, backups, and later Windows builds (builds go to that GameProjects folder, not into your project). The linked chat then shows the project&rsquo;s scenes (or Unreal maps), scripts, and packages.</p>
@@ -144,7 +157,7 @@ Win by clearing all enemies.</pre>
     <p>You need the project&rsquo;s <strong>exact Unity version installed in Unity Hub</strong> (Installs &gt; Install Editor &gt; Archive). Opening the project with a different Unity version upgrades it, and that is not easy to undo. If the matching editor is missing, GameDevelopmentBot will tell you the version to install. You can still ask it to open with another installed version anyway after you have a backup, but the default is to wait for the correct editor.</p>
     <p>On Unreal, it can edit <strong>C++ only</strong> (files under Source and Config). It cannot edit Blueprint assets (<code>.uasset</code>) as text; for those it will explain the Blueprint steps instead of changing the asset for you.</p>
 
-    <h2>6. First prompts you can copy</h2>
+    <h2>7. First prompts you can copy</h2>
     <p>A paragraph with your list of wants, then change the details to yours:</p>
     <pre class="prompt-ex" tabindex="0">Cozy farming sim called Maple Hollow. You plant crops, water them and sell the harvest at the market.
 - crops grow a stage every 30 seconds after you water them
@@ -164,10 +177,10 @@ Setting: A small pine-woods park with a wooden cabin, a dirt path, and a lake.
 Art style: Stylized low-poly with warm sunset lighting.
 Also: add a wooden watchtower, make it foggy, and show a photo counter on screen.</pre>
 
-    <h2>7. Troubleshooting</h2>
+    <h2>8. Troubleshooting</h2>
     <ul>
-      <li><strong>Update first.</strong> Reading a whole pasted plan with at most one question is new in 0.0.27; linking a game you already built is in 0.0.25 and later. Update GameDevelopmentBot, then try again.</li>
-      <li><strong>It keeps asking questions.</strong> On 0.0.27, paste the whole plan in one message (a paragraph or a list) in a <strong>new chat</strong>, or add &ldquo;just do it&rdquo;. If you are halfway through the one-at-a-time questions, pasting your plan or saying &ldquo;just do it&rdquo; finishes them with defaults and starts the build.</li>
+      <li><strong>Update first.</strong> Picture&rarr;3D is new in 0.0.28. Reading a whole pasted plan with at most one question is new in 0.0.27; linking a game you already built is in 0.0.25 and later. Update GameDevelopmentBot, then try again.</li>
+      <li><strong>It keeps asking questions.</strong> On 0.0.27 or later, paste the whole plan in one message (a paragraph or a list) in a <strong>new chat</strong>, or add &ldquo;just do it&rdquo;. If you are halfway through the one-at-a-time questions, pasting your plan or saying &ldquo;just do it&rdquo; finishes them with defaults and starts the build.</li>
       <li><strong>Unity or Unreal must be installed</strong> if you want GameDevelopmentBot to open and build the project. With Unreal Editor installed, it can create the Unreal project and package a playable Windows build. Blender helps for one-of-a-kind assets. Design and docs still work without an engine.</li>
       <li><strong>Linked Unity projects need the exact editor version</strong> that project was made with, installed in Unity Hub. A different version can upgrade the project in a way that is hard to undo.</li>
       <li><strong>Unreal Blueprints.</strong> GameDevelopmentBot can change C++ in your linked Unreal project. It cannot edit Blueprint assets directly.</li>

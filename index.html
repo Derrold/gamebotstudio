@@ -170,6 +170,7 @@
         <div class="card"><div class="ico r">✓</div><h3>Release-ready paperwork</h3><p>Docs, legal drafts, QA passes and Steam store prep, organized in one project folder.</p></div>
         <div class="card"><div class="ico">◇</div><h3>Bring your own model</h3><p>GameDevelopmentBot&rsquo;s own offline model stays the default. In Settings you can use other Ollama models already on your PC, a local server such as LM Studio or llama.cpp, or your own cloud API key. Cloud models send prompts off the PC.</p></div>
         <div class="card"><div class="ico r">☀</div><h3>Improved lighting and visuals</h3><p>Outdoor lighting and post-processing were tuned so scenes are less blown out. Missing foliage textures no longer show as magenta, and starting health displays at full.</p></div>
+        <div class="card"><div class="ico r">◆</div><h3>Picture &rarr; 3D model (new in 0.0.28)</h3><p>Give GameDevelopmentBot a picture of one object and it builds a textured 3D model (GLB + FBX for Unity) on your own GPU &mdash; NVIDIA or AMD, 8 GB VRAM. One-time 3D setup downloads about 20 GB and picks the right build for your graphics card automatically. Uses Tencent Hunyuan3D 2 (Tencent Hunyuan 3D 2.0 Community License).</p></div>
         <div class="card"><div class="ico">▣</div><h3>AMD stability</h3><p>On AMD cards, GameDevelopmentBot uses Vulkan when needed, sizes the model context for 8 GB VRAM, and if the driver resets, retries at a lower context with a clear message instead of hanging. Official support remains RX 6000 series or newer.</p></div>
       </div>
     </div>
@@ -207,10 +208,12 @@
       <p class="sub">GameDevelopmentBot is a Windows desktop app that runs local AI models on your own hardware.</p>
       <div class="grid3">
         <div class="card"><h3>Windows PC</h3><p>Windows 10 or 11 (64-bit).</p></div>
-        <div class="card"><h3>Graphics card</h3><p>NVIDIA RTX 20 series or newer, or AMD RX 6000 series or newer, with at least 8 GB VRAM; 12 GB recommended. On supported AMD cards, GameDevelopmentBot uses Vulkan when needed and automatically retries at a lower context if the GPU driver resets.</p></div>
+        <div class="card"><h3>Graphics card</h3><p>NVIDIA RTX 20 series or newer, or AMD RX 6000 series or newer, with at least 8 GB VRAM; 12 GB recommended. Picture &rarr; 3D works on 8 GB NVIDIA and AMD cards (AMD: RX 6600 or newer). On supported AMD cards, GameDevelopmentBot uses Vulkan when needed and automatically retries at a lower context if the GPU driver resets.</p></div>
         <div class="card"><h3>Ollama + local models</h3><p>GameDevelopmentBot&rsquo;s own offline model is the default and runs through Ollama on your PC. Installing Ollama and the first model download need internet. You can also use other Ollama models already on your PC, a local server such as LM Studio or llama.cpp, or &mdash; optionally &mdash; your own cloud API key. Cloud models need internet and send prompts off the PC.</p></div>
         <div class="card"><h3>Unity / Unreal (optional)</h3><p>Needed if you want GameDevelopmentBot to open and build the project. With Unreal Editor installed, GameDevelopmentBot can create the Unreal project and package a playable Windows build. Blender helps for one-of-a-kind assets.</p></div>
-        <div class="card"><h3>Disk space</h3><p>Leave room for local models (several GB each) and your projects.</p></div>
+        <div class="card"><h3>Memory (RAM)</h3><p>16 GB RAM minimum with the Windows pagefile turned on (the default); 32 GB recommended, especially for picture &rarr; 3D generation.</p></div>
+        <div class="card"><h3>Disk space</h3><p>About 25 GB free for the one-time picture &rarr; 3D setup, plus room for local AI models (several GB each) and your projects.</p></div>
+        <div class="card"><h3>Where it&rsquo;s available</h3><p>GameDevelopmentBot is not available in the European Union, the United Kingdom or South Korea. The 3D generator&rsquo;s license (Tencent Hunyuan 3D 2.0 Community License) does not cover those regions, so we do not sell, ship trials or activate licenses there.</p></div>
         <div class="card"><h3>Internet</h3><p>Needed to install GameDevelopmentBot and Ollama and to download models. Day-to-day local AI runs on your PC with no cloud LLM subscription. Downloading assets, web research, optional cloud models, and other online steps still need a connection. Cloud models send prompts off the PC.</p></div>
       </div>
     </div>
@@ -244,11 +247,12 @@
         <div class="cta" style="justify-content:center">
           <a id="buy" class="btn btn-primary" data-checkout="stripe" href="https://buy.stripe.com/9B63cu5h60bR39AdtjgUM00" target="_blank" rel="noopener noreferrer">Buy with Stripe</a>
         </div>
+        <p class="note"><strong>Not available in the EU, UK or South Korea.</strong> Checkout asks for your country of residence.</p>
         <p class="pay-methods">Secure checkout by <strong>Stripe</strong>. Your license key, the GameDevelopmentBot Setup download and the built-in AI model download appear on this page right after you pay.</p>
         <p class="note legal">Early Access is unfinished tester software: features may change or break. The license is personal and non-transferable, except an approved license transfer. One purchase is one PC. You may not copy, resell, or redistribute the software, playbooks, or Alphamax designs. Games you create with GameDevelopmentBot are yours. If a payment is disputed, charged back, reversed, or fails to clear, AlphaMax Studios / GameDevelopmentBot may immediately revoke the license key and disable download access. You must not keep using the product after it is revoked. See the <a href="eula.html">EULA</a> and <a href="privacy.html">Privacy Policy</a>.</p>
         <div id="trial-box" class="when-trial" hidden style="margin-top:18px">
           <h3 style="margin:0 0 6px">Try it free &mdash; 2 hours of building</h3>
-          <p class="muted" style="margin:0 0 8px">Just your email. No card. Start a game, play your first build, then decide.</p>
+          <p class="muted" style="margin:0 0 8px">Just your email. No card. Start a game, play your first build, then decide. Not available in the EU, UK or South Korea.</p>
           <form id="trial-form" class="cta" style="justify-content:center;flex-wrap:wrap;gap:8px" action="#" method="post">
             <input id="trial-email" name="email" type="email" required placeholder="Your email" autocomplete="email" style="padding:10px 12px;border-radius:8px;border:1px solid #888;min-width:240px">
             <button class="btn btn-ghost" type="submit">Start free trial</button>
@@ -271,6 +275,8 @@
       <details><summary>Does it need the cloud or a subscription?</summary><p>No cloud LLM subscription is required. GameDevelopmentBot&rsquo;s own offline model is the default, so local use has no cloud usage caps or per-message fees. You can optionally use a cloud model with your own API key; that path does send prompts off the PC.</p></details>
       <details><summary>Does daily use need the internet?</summary><p>Local AI chat and generation run on your PC after setup. Internet is required to install GameDevelopmentBot and Ollama and to download models the first time. You still need a connection when GameDevelopmentBot downloads assets, does web research, uses an optional cloud model, or anything else that pulls from the network.</p></details>
       <details><summary>Does it publish to Steam for me?</summary><p>It prepares store copy and checklists. Steam tax forms, App ID purchases and release clicks always stay with you.</p></details>
+      <details><summary>Where is GameDevelopmentBot available?</summary><p>Everywhere Stripe checkout works except the European Union, the United Kingdom and South Korea. GameDevelopmentBot’s picture &rarr; 3D generator uses Tencent Hunyuan3D 2, whose license does not apply in those regions, so we don’t sell, start trials or activate licenses there.</p></details>
+      <details><summary>How does picture &rarr; 3D work?</summary><p>Ask GameDevelopmentBot to turn a picture (PNG or JPG of one object) into a 3D model. The first time, it runs a one-time setup in the background (about 20 GB download, ~25 GB disk) that picks the right build for your NVIDIA or AMD card. Each model takes about 1&ndash;2 minutes on a fast NVIDIA card and about 6&ndash;15 minutes on an 8 GB AMD RX 6600, and lands in your game’s Art/Generated3D folder and Unity project as FBX + GLB with textures. Needs 16 GB RAM with the pagefile on; 32 GB recommended.</p></details>
       <details><summary>What GPU do I need?</summary><p>NVIDIA RTX 20 series or newer, or AMD RX 6000 series or newer, with at least 8 GB VRAM; 12 GB recommended. GameDevelopmentBot automatically picks the AI model for your card. On supported AMD cards it uses Vulkan when needed, sizes context for 8 GB VRAM, and retries at a lower context if the driver resets instead of hanging. CPU-only is much slower and is not recommended.</p></details>
       <details><summary>What languages does the app support?</summary><p>The current GameDevelopmentBot build includes a language/region selector, so the app UI is multi-language. Choose your language and region in the app.</p></details>
       <details><summary>How do I buy?</summary><p>Use the Buy with Stripe button in the <a href="#pricing">Pricing</a> section. Checkout is handled securely by Stripe. After you pay, your license key, the Setup download and the built-in AI model download appear on the page right after checkout. One purchase is one PC. Early Access is tester software, and all sales are final &mdash; no refunds. See the <a href="eula.html">EULA</a>. Questions: <a href="mailto:alphamaxstudios@gmail.com">alphamaxstudios@gmail.com</a>.</p></details>
@@ -286,6 +292,7 @@
 
 <footer>
   <div class="wrap">
+    <p class="note">Not available in the EU, UK or South Korea.</p>
     <p class="follow-us">
       <span class="follow-label">Follow us</span>
       <a href="https://x.com/AlphaMaxStudios" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>X</a>

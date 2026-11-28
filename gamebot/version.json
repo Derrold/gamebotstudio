@@ -1,13 +1,13 @@
 {
-  "version": "0.0.27",
-  "display": "V0.27",
-  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.27.zip",
-  "sha256": "4d361a00ad540a82bac252c0fba0ba44c78dce1947ac7d7210f0924cf3ee65b3",
-  "size": 2780978,
-  "released": "2026-11-27",
-  "notes": "GameDevelopmentBot V0.27: paste your whole plan in one message. A paragraph or list of everything you want (the game idea plus each feature) is read in one go: it fills sensible defaults, asks at most one short question (only the engine if you have both Unity and Unreal, or missing assets), then builds the game and works through your tasks in order, reporting each one. Say \"just do it\" or \"use defaults\" to skip the question. A list of changes sent in an existing game's chat runs as edits on that game with one rebuild - no new questions. New: bosses and extra enemies for every game type, models you ask for are placed in the level, warmer sunsets, and the version shows as 0.0.27.",
+  "version": "0.0.28",
+  "display": "V0.28",
+  "url": "https://gamebot-licenses.alphamaxstudios.workers.dev/v1/update/GameBot-0.0.28.zip",
+  "sha256": "f221d515fba0b6bc644ae969e2feb28278170dd69d7a8ef50b38768dcf23fc58",
+  "size": 2963006,
+  "released": "2026-11-28",
+  "notes": "GameDevelopmentBot V0.28: picture -> 3D model. Give it a picture of one object (PNG/JPG) and it builds a textured 3D model (GLB + FBX, copied into your Unity project) on your own GPU - NVIDIA or AMD with 8 GB VRAM. The first time, a one-time background setup (about 20 GB, ~25 GB free disk) picks the right build for your graphics card. Needs 16 GB RAM with the Windows pagefile on (32 GB recommended). Powered by Tencent Hunyuan3D 2 (Tencent Hunyuan 3D 2.0 Community License). GameDevelopmentBot is not available in the EU, UK or South Korea.",
   "setup_url": "https://gamebot-licenses.alphamaxstudios.workers.dev/dl/",
-  "setup_sha256": "0ab240def5834f969734b5661d86bbf0bf7a82b850987c019e97f6d93dc1ddd8",
-  "setup_size": 4753630,
-  "signature": "dI+RYmrmCCEy9wXVk5azqo6vVh+sRTdonUq3qQi/Lhucau+IHDvVmFvC3qYKwpnmdGfaIr9gICnI9JAD7aaoDg=="
+  "setup_sha256": "f9a19d63a0dffa504a90e6e7e3d7ed7dc22f784e4d21360adb92c1841b9972ad",
+  "setup_size": 4881176,
+  "signature": "LyPukeRoDhvWFalRK3tq0sJRI43vNMqnlyVxo6BCED0mLm+HyG7gUYL9XAFosBZX6MArLf6KIa+4UFrsAFCSBA=="
 }
